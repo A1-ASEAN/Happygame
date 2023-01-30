@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import localFont from '@next/font/local'
 import { Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
-
+import { styled } from '@mui/material/styles';
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
@@ -23,14 +23,16 @@ const theme = createTheme({
     },
 });
 
+
 export default function Butoom() {
     return (
-        <ThemeProvider theme={theme}>    
+        <ThemeProvider theme={theme}>
 
             <Stack justifyContent="center"
                 alignItems="center">
+                
 
-                <Button  color="primary" variant="contained" sx={{ mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
+                <Button  color="primary" variant="contained" sx={{ boxShadow:"inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)",mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
                     <Stack justifyContent="center"
                         alignItems="center"
                         direction="column"
@@ -44,20 +46,7 @@ export default function Butoom() {
                         </Box>
                     </Stack>
                 </Button>
-
-
-                <Box className={myFont.className}
-                    sx={{
-                        mt: 2.5,
-                        borderRadius: '3px',
-                        width: 180, height: 45,
-                        backgroundColor: "#0C4BAF", position: "absolute", zIndex: 'modal'
-                    }}>
-                </Box>
             </Stack>
-
-
-
 
 
         </ThemeProvider>
