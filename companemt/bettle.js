@@ -37,7 +37,7 @@ const Top = () => {
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
                     height: '100%', width: "260px", position: 'absolute',
-                    zIndex: 'tooltip', pt: 17,
+                    zIndex: 'drawer', pt: 17,
                 }}>
                     <Stack direction="row"
                         justifyContent="space-between"
@@ -49,9 +49,9 @@ const Top = () => {
                                 position: 'absolute',
                                 pt: 7,
                                 pr: 0.2,
-                                zIndex: 'tooltip',
+                                zIndex: 'drawer',
                             }}>
-                                <Box sx={{ width: 80.5, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
+                                <Box sx={{ width: 80.5, height: 3.5, bgcolor: "#FFC05F", zIndex: 'drawer' }}></Box>
                             </Box> : <Box></Box>}
                         <Box onClick={() => toggle(2)}>
 
@@ -61,7 +61,7 @@ const Top = () => {
                                     position: 'absolute',
                                     pt: 0.7,
                                     pl: 1,
-                                    zIndex: 'tooltip',
+                                    zIndex: 'drawer',
                                 }}>
                                     <Box sx={{ width: 55, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
                                 </Box> : <Box >

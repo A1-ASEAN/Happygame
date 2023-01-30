@@ -29,11 +29,12 @@ const theme = createTheme({
 const Top = () => {
 
 
-   
+
     return (
 
-        
+<Stack justifyContent="flex-start" alignItems="center" >
 
+        <Box height={"339px"} width={'381px'} >
             <Box
                 sx={{
                     height: "34px",
@@ -56,7 +57,7 @@ const Top = () => {
                     zIndex: 'modal',
                 }}><ThemeProvider theme={theme}>
                         <Stack direction="row"
-                            justifyContent="space-between" 
+                            justifyContent="space-between"
                             alignItems="center"
 
                             spacing={1}>
@@ -141,18 +142,19 @@ const Top = () => {
                         }}>
                             <img src='/image/wall.png' />
                         </Box >
-                        
+
 
                     </Stack>
-                    
+
                     <Bettle />
 
-                   
+
                 </Box>
 
             </Box >
 
-        
+        </Box>
+        </Stack>
 
     );
 }

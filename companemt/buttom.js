@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import localFont from '@next/font/local'
-import { Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 
@@ -27,27 +27,67 @@ const theme = createTheme({
 export default function Butoom() {
     return (
         <ThemeProvider theme={theme}>
+            <Stack alignItems="center">
+                <Box width={'390px'}>
 
-            <Stack justifyContent="center"
-                alignItems="center">
-                
+                    <Stack direction="row" justifyContent="center"
+                        alignItems="center" >
+                        <Box>
+                            <Stack justifyContent="center"
+                                alignItems="center">
 
-                <Button  color="primary" variant="contained" sx={{ boxShadow:"inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)",mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
-                    <Stack justifyContent="center"
-                        alignItems="center"
-                        direction="column"
-                        spacing={0}
-                        sx={{ m: 0 }}>
-                        <Typography className={myFont.className} sx={{ fontSize: '30px', height: "35px" }}>
-                            SCAN
-                        </Typography>
-                        <Box sx={{ mb: 1.5 }}>
-                            <img src='/image/buttom/hart.svg' />
+
+                                <Button color="primary" variant="contained" sx={{ boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
+                                    <Stack justifyContent="center"
+                                        alignItems="center"
+                                        direction="column"
+                                        spacing={0}
+                                        sx={{ m: 0 }}>
+                                        <Typography className={myFont.className} sx={{ fontSize: '30px', height: "35px" }}>
+                                            SCAN
+                                        </Typography>
+                                        <Box sx={{ mb: 1.5 }}>
+                                            <img src='/image/buttom/hart.svg' />
+                                        </Box>
+                                    </Stack>
+                                </Button>
+
+                            </Stack>
+                        </Box>
+                        <Box sx={{
+                            position: 'relative',
+                            zIndex: 'tooltip',
+                            width: '20px',pt:2
+                            
+                        }}>
+                            <Link href="#" underline="none">
+                                <Stack sx={{ pl: 7 }}>
+                                    <Box>
+                                        <img src=' /image/buttom/lucky.svg' />
+                                    </Box>
+                                    <Box sx={{
+                                        position: 'absolute',
+                                        zIndex: 'tooltip',
+                                        ml: 2.5,
+                                        pb: 2
+                                    }}>
+                                        <img src=' /image/buttom/1.svg' />
+                                    </Box>
+                                </Stack>
+                            </Link>
+                            <Stack
+                                direction="column"  justifyContent="center"
+                                alignItems="center"sx={{ height: "20px",pl: 9,pb:1 }}>
+                                <ThemeProvider theme={theme}>
+                                    <Typography className={myFont.className} sx={{ fontSize: '20px', height: "10px" }}>LUCKY</Typography>
+                                    <Typography className={myFont.className} sx={{ fontSize: '20px' }}>DRAW</Typography>
+                                </ThemeProvider>
+                            </Stack>
                         </Box>
                     </Stack>
-                </Button>
-            </Stack>
 
+                </Box>
+            </Stack>
 
         </ThemeProvider>
     );

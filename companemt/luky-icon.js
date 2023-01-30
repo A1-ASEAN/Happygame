@@ -19,38 +19,43 @@ const theme = createTheme({
 export default function LuckyIcon() {
 
     return (
-        
-            <Box sx={{
-                position: 'absolute',
-                zIndex: 'tooltip',
-                right: 20,
-                bottom: 75
-            }}>
-                <Link href="#" underline="none">
-                    <Stack sx={{ pl: 0.5 }}>
-                        <Box>
-                            <img src=' /image/buttom/lucky.svg' />
-                        </Box>
-                        <Box sx={{
-                            position: 'fixed',
-                            zIndex: 'tooltip',
-                            ml: 2.5,
-                            pb: 2
-                        }}>
-                            <img src=' /image/buttom/1.svg' />
-                        </Box>
+
+        <Stack
+            alignItems="center">
+            <Box width={"390px"}>
+                <Box sx={{
+                    position: 'relative',
+                    zIndex: 'tooltip',
+                    width: '100%'
+
+
+                }}>
+                    <Link href="#" underline="none">
+                        <Stack sx={{ pl: 0.5 }}>
+                            <Box>
+                                <img src=' /image/buttom/lucky.svg' />
+                            </Box>
+                            <Box sx={{
+                                position: 'fixed',
+                                zIndex: 'tooltip',
+                                ml: 2.5,
+                                pb: 2
+                            }}>
+                                <img src=' /image/buttom/1.svg' />
+                            </Box>
+                        </Stack>
+                    </Link>
+                    <Stack
+                        direction="column" sx={{ height: "20px" }}>
+                        <ThemeProvider theme={theme}>
+                            <Typography className={myFont.className} sx={{ fontSize: '20px', height: "10px" }}>LUCKY</Typography>
+                            <Typography className={myFont.className} sx={{ fontSize: '20px' }}>DRAW</Typography>
+                        </ThemeProvider>
                     </Stack>
-                </Link>
-                <Stack justifyContent="center"
-                    alignItems="center"
-                    direction="column" sx={{ height: "20px" }}>
-                    <ThemeProvider theme={theme}>
-                        <Typography className={myFont.className} sx={{ fontSize: '20px', height: "10px" }}>LUCKY</Typography>
-                        <Typography className={myFont.className} sx={{ fontSize: '20px' }}>DRAW</Typography>
-                    </ThemeProvider>
-                </Stack>
+                </Box>
             </Box>
-       
+        </Stack>
+
 
     );
 }

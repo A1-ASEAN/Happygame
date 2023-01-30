@@ -36,10 +36,10 @@ const theme = createTheme({
 
 export default function AccessibleTable() {
     return (
-        <Box>
+        <Stack alignItems={"center"}>
             <Box sx={{
                 height: "100%",
-                width: '100%',
+                width: '414px',
                 position: 'relative',
 
             }}>
@@ -140,20 +140,20 @@ export default function AccessibleTable() {
                                                 <Box>
                                                     <Stack direction='row'>
                                                         <Typography className='Status-Scan' color={"secondary"} sx={{ pl: 2, fontSize: "12px", zIndex: 'tooltip', }}>
-                                                        Scan by
+                                                            Scan by
 
                                                         </Typography>
                                                         <Typography className='Scan-By' sx={{ pl: 0.5, fontSize: "12px" }} >
-                                                        Christian Bale
+                                                            Christian Bale
                                                         </Typography>
                                                     </Stack>
                                                     <Typography className='P-type' sx={{ pl: 2, fontSize: "12px" }} >
-                                                    Happiness
+                                                        Happiness
                                                     </Typography>
                                                 </Box>
 
                                             </Stack>
-                                            
+
                                         </Stack>
 
                                     </TableCell>
@@ -201,16 +201,16 @@ export default function AccessibleTable() {
 
                                                         </Typography>
                                                         <Typography className='Scan-By' sx={{ pl: 0.5, fontSize: "12px" }} >
-                                                        Tom Holland
+                                                            Tom Holland
                                                         </Typography>
                                                     </Stack>
                                                     <Typography className='P-type' sx={{ pl: 2, fontSize: "12px" }} >
-                                                    Sadness
+                                                        Sadness
                                                     </Typography>
                                                 </Box>
 
                                             </Stack>
-                                            
+
                                         </Stack>
 
                                     </TableCell>
@@ -258,7 +258,7 @@ export default function AccessibleTable() {
 
                                                         </Typography>
                                                         <Typography className='Scan-By' sx={{ pl: 0.5, fontSize: "12px" }} >
-                                                        Mark Wahlberg
+                                                            Mark Wahlberg
                                                         </Typography>
                                                     </Stack>
                                                     <Typography className='P-type' sx={{ pl: 2, fontSize: "12px" }} >
@@ -267,7 +267,7 @@ export default function AccessibleTable() {
                                                 </Box>
 
                                             </Stack>
-                                            
+
                                         </Stack>
 
                                     </TableCell>
@@ -288,10 +288,10 @@ export default function AccessibleTable() {
 
                 </TableContainer>
 
-                <Box sx={{bgcolor:'#fff', width:'100%',height:"10px" , zIndex: 'tooltip',position: 'absolute'   }} button={0}></Box>
+                <Box sx={{ bgcolor: '#fff', width: '100%', height: "10px", zIndex: 'tooltip', position: 'absolute' }} button={0}></Box>
             </Box>
-            
-            
-        </Box>
+
+
+        </Stack>
     );
 }

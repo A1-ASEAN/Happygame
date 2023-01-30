@@ -22,8 +22,9 @@ function chang() {
   }
 
   return (
-    
-      <Box sx={{width:"100%", height:"70px", bottom: 0, left: 0, right: 0, zIndex: 'tooltip',bgcolor:"#fff"}}>
+
+    <Stack alignItems="center">
+      <Box sx={{ width: "390px", height: "70px", bottom: 0, left: 0, right: 0, zIndex: 'tooltip', bgcolor: "#fff" }}>
 
         <Stack direction="row"
           justifyContent="space-between"
@@ -54,7 +55,9 @@ function chang() {
         </Stack>
 
       </Box>
-    
+
+    </Stack>
+
   );
 }
 export default chang;

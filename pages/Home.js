@@ -34,7 +34,7 @@ const theme = createTheme({
 export default function Home() {
     return (
 
-        <Box height={"100vh"} overflow={'hidden'}>
+        <Box height={"100vh"} overflow={'hidden'} bgcolor={'#fff'}>
             <Box height={"100%"} display={"flex"} flexDirection={"column"}>
 
                 <Box >
@@ -47,7 +47,7 @@ export default function Home() {
 
                     <Main />
                     <Butoom />
-                    <LukyIcon/>
+                   
                 </Box>
 
                 <Box >

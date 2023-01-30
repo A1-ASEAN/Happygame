@@ -28,11 +28,13 @@ const theme = createTheme({
 
 const Top = () => {
     return (
+        <Stack alignItems="center">
 
-        <Box maxWidth="100%">
+
 
             <Box
                 sx={{
+                    maxWidth: "390px",
                     height: "340px",
                     width: '100%',
                     position: 'relative',
@@ -48,24 +50,28 @@ const Top = () => {
                     </Box>
                 </Stack>
 
-                <Box maxWidth="390px" sx={{
+                <Box maxWidth="100%" sx={{
                     position: 'relative ',
                     zIndex: 'modal',
-                }}><ThemeProvider theme={theme}>
+                }}>
+                    <ThemeProvider theme={theme}>
                         <Stack direction="row"
-                            justifyContent="space-between" 
+                            justifyContent="space-between"
                             alignItems="center"
+                            spacing={0}>
+                            <Box>
+                                <Stack direction="row" >
+                                    <img src="/image/taket.svg" />
+                                    <Typography className={myFont.className} sx={{ pl: 1, fontSize: 30 }} color={"secondary"} >500</Typography>
+                                </Stack>
+                            </Box>
+                            <Box>
+                                <Stack direction="row" >
 
-                            spacing={1}>
-                            <Stack direction="row" alignItems="center" sx={{ pl: 1 }}>
-                                <img src="/image/taket.svg" />
-                                <Typography className={myFont.className} sx={{ pl: 1, fontSize: 30 }} color={"secondary"} >500</Typography>
-                            </Stack>
-                            <Stack direction="row" alignItems="center" sx={{ pr: 1 }}>
-
-                                <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
-                                <img src="/image/book.svg" />
-                            </Stack>
+                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
+                                    <img src="/image/book.svg" />
+                                </Stack>
+                            </Box>
                         </Stack>
                     </ThemeProvider>
 
@@ -142,59 +148,13 @@ const Top = () => {
                     </Stack>
                     <Bettle />
 
-                    {/* <ThemeProvider theme={theme}>
-                        <Stack direction="row"
-                            justifyContent="flex-start"
-                            alignItems="center"
 
-                        >
-                            <Box sx={{
-                                position: 'absolute',
-                                pt: 18,
-                                pl: 10,
-                                zIndex: 'tooltip',
-
-                            }}> <Typography onClick color={"primary"} className={myFont.className} variant='h4'
-                                sx={{ mb: 1.5, }} >
-                                    BATTLE
-                                </Typography>
-                            </Box>
-
-                            <Box sx={{
-                                position: 'absolute',
-                                pt: 22.2,
-                                pl: 9.6,
-                                zIndex: 'tooltip',
-                            }}>
-                                <img src='/image/color-yallow.svg' />
-                            </Box>
-
-                        </Stack>
-                        <Stack direction="row"
-                            justifyContent="flex-end"
-                            alignItems="center"
-
-                        >
-                            <Box sx={{
-                                position: 'absolute',
-                                pt: 18,
-                                pr: 10,
-                                zIndex: 'tooltip',
-
-                            }}> <Typography color={"primary"} className={myFont.className} variant='h4'
-                                sx={{ mb: 1.5, }}>
-                                    ITEM
-                                </Typography>
-                            </Box>
-
-
-                        </Stack>
-                    </ThemeProvider> */}
                 </Box>
 
             </Box >
 
-        </Box>
+
+        </Stack>
 
     );
 }

@@ -7,7 +7,6 @@ import Main from '../companemt/shop-main'
 
 
 
-
 export default function Home() {
     return (
 
@@ -21,7 +20,7 @@ export default function Home() {
 
                 </Box>
 
-                <Box flex={1} overflow={"hidden"} sx={{ overflowY: "auto" }}>
+                <Box  flex={1} overflow={"hidden"} sx={{ overflowY: "auto" }}>
 
                 <Main/>
                 </Box>

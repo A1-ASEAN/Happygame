@@ -37,7 +37,7 @@ const Top = () => {
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
                     height: '100%', width: "350px",
-mt:5,
+                    mt: 5,
                     zIndex: 'tooltip',
                 }}>
                     <Stack direction="row"
