@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="56" viewBox="0 0 36 56">
+  <g id="Group_711" data-name="Group 711" transform="translate(-1475 -115.99)">
+    <g id="Group_171" data-name="Group 171" transform="translate(1485.286 115.99)">
+      <rect id="Rectangle_9476" data-name="Rectangle 9476" width="25.714" height="5.143" transform="translate(0 20.571)" fill="#defbff"/>
+      <rect id="Rectangle_9477" data-name="Rectangle 9477" width="25.714" height="5.143" transform="translate(0 10.441)" fill="#defbff"/>
+      <rect id="Rectangle_9478" data-name="Rectangle 9478" width="25.714" height="5.143" transform="translate(0)" fill="#defbff"/>
+    </g>
+    <g id="Group_172" data-name="Group 172" transform="translate(1475 115.99)">
+      <rect id="Rectangle_9479" data-name="Rectangle 9479" width="17.922" height="5.143" transform="translate(18.078 20.571)" fill="#0968ff"/>
+      <rect id="Rectangle_9480" data-name="Rectangle 9480" width="17.922" height="5.143" transform="translate(18.078 10.441)" fill="#0968ff"/>
+      <rect id="Rectangle_9481" data-name="Rectangle 9481" width="17.922" height="5.143" transform="translate(18.078)" fill="#0968ff"/>
+      <rect id="Rectangle_9482" data-name="Rectangle 9482" width="5.143" height="5.143" transform="translate(0 20.571)" fill="#0942b2"/>
+      <rect id="Rectangle_9483" data-name="Rectangle 9483" width="5.143" height="5.143" transform="translate(0 10.441)" fill="#0942b2"/>
+      <rect id="Rectangle_9484" data-name="Rectangle 9484" width="5.143" height="5.143" transform="translate(0)" fill="#0942b2"/>
+    </g>
+    <text id="Mission" transform="translate(1493 168.99)" fill="#0968ff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-16.914" y="0">Mission</tspan></text>
+  </g>
+</svg>

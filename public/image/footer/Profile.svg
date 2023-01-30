@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.979" height="63" viewBox="0 0 39.979 63">
+  <g id="Group_712" data-name="Group 712" transform="translate(-3258.804 -963.549)">
+    <path id="Path_571" data-name="Path 571" d="M3364.129,963.549,3351.6,983.538l12.524,19.989a19.989,19.989,0,1,0,0-39.978Z" transform="translate(-85.336)" fill="#dcdcdc"/>
+    <path id="Path_572" data-name="Path 572" d="M3258.8,983.538a19.989,19.989,0,0,0,19.989,19.989V963.549A19.989,19.989,0,0,0,3258.8,983.538Z" transform="translate(0)" fill="#f0f0f0"/>
+    <path id="Path_573" data-name="Path 573" d="M3448.581,1021.792l-5.137,8.2,5.137,8.2a8.2,8.2,0,1,0,0-16.4Z" transform="translate(-169.788 -53.558)" fill="#b4b4b4"/>
+    <path id="Path_574" data-name="Path 574" d="M3405.38,1029.991a8.2,8.2,0,0,0,8.2,8.2v-16.4A8.2,8.2,0,0,0,3405.38,1029.991Z" transform="translate(-134.785 -53.558)" fill="#c8c8c8"/>
+    <path id="Path_575" data-name="Path 575" d="M3466.916,1257.527a8.206,8.206,0,0,0-6.141-2.767h-7.027l-4.685,5.934,4.685,5.934a15.346,15.346,0,0,0,13.309-7.746l.414-.728Z" transform="translate(-174.954 -267.786)" fill="#b4b4b4"/>
+    <path id="Path_576" data-name="Path 576" d="M3343.39,1254.76a8.206,8.206,0,0,0-6.141,2.767l-.555.628.414.728a15.346,15.346,0,0,0,13.309,7.746V1254.76Z" transform="translate(-71.625 -267.786)" fill="#c8c8c8"/>
+    <text id="Profile" transform="translate(3278.793 1023.549)" fill="#8b8b8b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-14.07" y="0">Profile</tspan></text>
+  </g>
+</svg>

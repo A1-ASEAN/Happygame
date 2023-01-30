@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.978" height="63" viewBox="0 0 39.978 63">
+  <g id="Group_180" data-name="Group 180" transform="translate(-3258.804 -8.492)">
+    <path id="Path_534" data-name="Path 534" d="M3364.129,8.492,3351.6,28.481l12.524,19.989a19.989,19.989,0,0,0,0-39.979Z" transform="translate(-85.336)" fill="#c2e7ff"/>
+    <path id="Path_535" data-name="Path 535" d="M3258.8,28.481a19.989,19.989,0,0,0,19.989,19.989V8.492A19.989,19.989,0,0,0,3258.8,28.481Z" transform="translate(0)" fill="#defbff"/>
+    <path id="Path_536" data-name="Path 536" d="M3448.581,66.734l-5.137,8.2,5.137,8.2a8.2,8.2,0,1,0,0-16.4Z" transform="translate(-169.788 -53.557)" fill="#0942b2"/>
+    <path id="Path_537" data-name="Path 537" d="M3405.38,74.933a8.2,8.2,0,0,0,8.2,8.2v-16.4A8.2,8.2,0,0,0,3405.38,74.933Z" transform="translate(-134.785 -53.557)" fill="#0968ff"/>
+    <path id="Path_538" data-name="Path 538" d="M3466.915,302.47a8.206,8.206,0,0,0-6.141-2.767h-7.028l-4.685,5.934,4.685,5.934a15.346,15.346,0,0,0,13.31-7.746l.414-.728Z" transform="translate(-174.954 -267.786)" fill="#0942b2"/>
+    <path id="Path_539" data-name="Path 539" d="M3343.39,299.7a8.206,8.206,0,0,0-6.141,2.767l-.555.627.414.728a15.346,15.346,0,0,0,13.309,7.746V299.7Z" transform="translate(-71.624 -267.786)" fill="#0968ff"/>
+    <text id="Profile" transform="translate(3278.804 68.492)" fill="#0968ff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-14.07" y="0">Profile</tspan></text>
+  </g>
+</svg>
