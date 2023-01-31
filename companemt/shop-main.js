@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import localFont from '@next/font/local'
-import Buy from './buy'
+import Comflrm from './comflrm'
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
@@ -79,7 +79,7 @@ function shopmain() {
 
         <Stack alignItems="center">
 
-            <Box width={'390px'} sx={{}}>
+            <Box width={'414px'} sx={{pl:2,pr:2}}>
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
@@ -188,8 +188,8 @@ function shopmain() {
                 {itembuy == 10 ? <Explain toggle={toggle} /> : ""}
                 {itembuy == 11 ? <Explain toggle={toggle} />: ""}
                 {itembuy == 12 ? <Explain toggle={toggle} />: ""}
-                {itembuy == 13 ? <Buy toggle={toggle}/> : ""}
-                {itembuy == 14 ? <Comfirm /> : ""}
+                {itembuy == 13 ? <Comflrm /> : ""}
+              
             </Box>
             
         </Stack>

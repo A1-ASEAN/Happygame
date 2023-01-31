@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import localFont from '@next/font/local'
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import Link from 'next/link';
 
 
 
@@ -35,39 +36,43 @@ const Top = () => {
     return (
         <ThemeProvider theme={theme}>
             <Stack alignItems="center" justifyContent="center">
+
                 <Box sx={{
-                    height: '100%', width: "260px", position: 'absolute',
-                    zIndex: 'drawer', pt: 17,
+                    height: '100%', width: "260px", position: 'relative',
+                    zIndex: 'drawer', pt: 5.7,
                 }}>
                     <Stack direction="row"
                         justifyContent="space-between"
                         alignItems="center">
-
-                        <Typography className={myFont.className} variant='h4' onClick={() => toggle(1)} color={"primary"} >BETTLE</Typography>
-                        {tab == 1 ?
-                            <Box sx={{
-                                position: 'absolute',
-                                pt: 7,
-                                pr: 0.2,
-                                zIndex: 'drawer',
-                            }}>
-                                <Box sx={{ width: 80.5, height: 3.5, bgcolor: "#FFC05F", zIndex: 'drawer' }}></Box>
-                            </Box> : <Box></Box>}
-                        <Box onClick={() => toggle(2)}>
-
-                            <Typography className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>ITEM</Typography>
-                            {tab == 2 ?
+                        <Link href={"/Home"}>
+                            <Typography className={myFont.className} variant='h4' onClick={() => toggle(1)} color={"primary"} >BETTLE</Typography>
+                            {tab == 1 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.7,
-                                    pl: 1,
+                                    pt: 0.6,
+                                    pr: 0.2,
                                     zIndex: 'drawer',
                                 }}>
-                                    <Box sx={{ width: 55, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
-                                </Box> : <Box >
+                                    <Box sx={{ width: 80.5, height: 3.5, bgcolor: "#FFC05F", zIndex: 'drawer' }}></Box>
+                                </Box> : <Box></Box>}</Link>
+                            <Link href={"/item"}>
+                            
+                            <Box onClick={() => toggle(2)}>
 
-                                </Box>}
-                        </Box>
+                                <Typography className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>ITEM</Typography>
+                                {tab == 2 ?
+                                    <Box sx={{
+                                        position: 'absolute',
+                                        pt: 0.6,
+                                        pl: 1,
+                                        zIndex: 'drawer',
+                                    }}>
+                                        <Box sx={{ width: 55, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
+                                    </Box> : <Box >
+
+                                    </Box>}
+                            </Box>
+                        </Link>
                     </Stack>
                 </Box>
             </Stack>

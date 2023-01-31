@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Bettle from './bettle'
-import { Button } from '@mui/material';
+import { Button, Link } from '@mui/material';
 
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
@@ -34,7 +34,7 @@ const Top = () => {
 
             <Box
                 sx={{
-                    maxWidth: "390px",
+                    maxWidth: "414px",
                     height: "340px",
                     width: '100%',
                     position: 'relative',
@@ -44,6 +44,7 @@ const Top = () => {
                     <Box sx={{
                         position: 'absolute',
                         zIndex: 'tooltip',
+                        height: "340px",
 
                     }}>
                         <img src='/image/bg.svg' />
@@ -60,13 +61,13 @@ const Top = () => {
                             alignItems="center"
                             spacing={0}>
                             <Box>
-                                <Stack direction="row" >
+                                <Stack direction="row" sx={{ pl: 1, fontSize: 30 }} >
                                     <img src="/image/taket.svg" />
                                     <Typography className={myFont.className} sx={{ pl: 1, fontSize: 30 }} color={"secondary"} >500</Typography>
                                 </Stack>
                             </Box>
                             <Box>
-                                <Stack direction="row" >
+                                <Stack direction="row" sx={{ pr: 1, fontSize: 30 }}>
 
                                     <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
                                     <img src="/image/book.svg" />
@@ -82,6 +83,7 @@ const Top = () => {
                         position: 'relative',
                         zIndex: 'tooltip',
                         width: '100%',
+
                     }}>
 
                     <Stack justifyContent="center"
@@ -105,13 +107,17 @@ const Top = () => {
                         }}>
                             <img src='/image/nar.svg' />
                         </Box>
-                        <Box sx={{
-                            pt: 1,
-                            zIndex: 'tooltip',
-                            pl: 2
-                        }}>
-                            <img src='/image/key.svg' />
-                        </Box>
+                        <Link href='../ProfileLock' underline="none">
+
+                            <Box sx={{
+                                pt: 1,
+                                zIndex: 'tooltip',
+                                pl: 2
+                            }}>
+                                <img src='/image/key.svg' />
+                            </Box>
+
+                        </Link>
 
                         <Box sx={{
                             pt: 1,

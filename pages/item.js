@@ -10,7 +10,7 @@ import Mian from '../companemt/item-main'
 function item() {
   return (
 
-    <Box height={"100vh"} overflow={'hidden'}>
+    <Box height={"100vh"} overflow={'hidden'} bgcolor={"#f1f1f1"}>
       <Box height={"100%"} display={"flex"} flexDirection={"column"}>
 
         <Box >

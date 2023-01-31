@@ -37,6 +37,7 @@ export default function Butoom() {
                                 alignItems="center">
 
 
+                                <Link href='/Scan'>
                                 <Button color="primary" variant="contained" sx={{ boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
                                     <Stack justifyContent="center"
                                         alignItems="center"
@@ -52,6 +53,7 @@ export default function Butoom() {
                                     </Stack>
                                 </Button>
 
+                                </Link>
                             </Stack>
                         </Box>
                         <Box sx={{

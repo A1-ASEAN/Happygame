@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Box, Stack, Typography, Link } from '@mui/material'
 import localFont from '@next/font/local'
-import { Opacity } from '@mui/icons-material'
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
@@ -15,7 +15,7 @@ const theme = createTheme({
         },
         secondary: {
             // This is green.A700 as hex.
-            main: '#FFC05F',
+            main: '#0ACD7A',
         },
     },
 });
@@ -30,45 +30,50 @@ function buy() {
     // }
     return (
 
-
-        <Box  >
-            <Box bgcolor={"#000"} sx={{ opacity: 0.6, width: "100%", height: "100%", position: 'absolute', zIndex: "tooltip", top: 0 }}>
+<Stack direction="row"
+            justifyContent="center"
+            alignItems="center"
+            spacing={0}>
+        <Box  sx={{  width: "100%", height: "100%", position: 'fixed', zIndex: "tooltip", top: 0, left: 0, right: 0 }}>
+            <Box bgcolor={"#000"} sx={{ opacity: 0.8, width: "100%", height: "100%", position: 'fixed', zIndex: "tooltip", top: 0, left: 0, right: 0 }}>
 
             </Box>
-            <Box position={"absolute"} sx={{ top: "30%", right: "20%", zIndex: "tooltip", }} >
+            <Box position={"fixed"} sx={{ top: "30%", right: "20%", zIndex: "tooltip", }} >
                 <ThemeProvider theme={theme}>
-                    <Typography sx={{ pl: 0, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                    <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         DO TOU WANT
                     </Typography >
-                    <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                        TO BUY
+                    <Typography sx={{ pl: 7.5, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                        TO REDEEM
                     </Typography>
-                    <Typography sx={{ pl: 3, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                        5 HEALING
+
+                    <Typography sx={{ pl:5.7, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                        THIS REDEEM?
                     </Typography>
-                    <Typography sx={{ pl: 6, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                        POTION?
-                    </Typography>
+
+                    <Box sx={{ pl: 7 }}>
+                        <Link href={'/Home'}  underline="none">
+                        <Button variant="contained" sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} color={"secondary"}>
+                            <Typography color={"primary"} className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
+                                COMFIRM
+                            </Typography>
+                        </Button>
+                        </Link>
+                    </Box>
+                    <Box sx={{ pl: 7, pt: 3 }}>
+                        <Link href='../Reward' underline="none">
+                            <Button variant="contained" color='error' sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
+                                <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
+                                    CANCLE
+                                </Typography>
+                            </Button>
+                        </Link>
+                    </Box>
                 </ThemeProvider>
-                <Box sx={{ pl:2}}>
-                    <Button variant="contained" sx={{height: '54px',width:'186px',boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)"}} >
-                    <Typography  className={myFont.className} sx={{fontSize: 30 ,height: '40px',mb:1}} >
-                        COMFIRM
-                    </Typography>
-                    </Button>
-                </Box>
-                <Box sx={{ pl:2,pt:3}}>
-                    <Link href='../Shop' underline="none">
-                    <Button  variant="contained" color='error' sx={{height: '54px',width:'186px',boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)"}} >
-                    <Typography  className={myFont.className} sx={{fontSize: 30 ,height: '40px',mb:1}} >
-                        CANCLE
-                    </Typography>
-                    </Button>
-                    </Link>
-                </Box>
 
             </Box>
         </Box>
+        </Stack>
 
 
         // <Stack direction="row" justifyContent="center" alignItems="center">

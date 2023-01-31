@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import localFont from '@next/font/local'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import Bottom from './item-buttom'
+import Bottom from './buttom'
 import { useState } from 'react';
 import Healling from './healing'
 import Button from '@mui/material/Button';
@@ -38,7 +38,7 @@ function itemmain() {
 
 
 
-            <Box sx={{ position: 'relative', width: '390px', height: "100%", mt: "5px" }}>
+            <Box sx={{ position: 'relative', width: '414px', height: "100%", mt: "5px" }}>
 
                 <Stack direction="column"
                     justifyContent="center"
@@ -84,7 +84,7 @@ function itemmain() {
                             justifyContent="space-evenly"
                             alignItems="center"
                             spacing={0}>
-                            {item == 4 ? <Box sx={{ position: 'absolute', zIndex: 'modal', ml: 34, mt: 0.9 }}><img src='/image/item/bg-4.svg' /></Box> : ""}
+                            {item == 4 ? <Box sx={{ position: 'absolute', zIndex: 'modal', ml: 36.5, mt: 0.9 }}><img src='/image/item/bg-4.svg' /></Box> : ""}
                             <Box onClick={() => toggle(4)} className="Box-4" sx={{ boxShadow: 3, bgcolor: '#fff', width: "81px", height: '81px', borderRadius: "10px" }}>
                                 <Stack justifyContent="center"
                                     alignItems="center" sx={{ pt: 0.5 }} >
@@ -105,7 +105,7 @@ function itemmain() {
                                     <img src='/image/item/2.svg' />
                                 </Stack>
                             </Box>
-                            {item == 1 ? <Box sx={{ position: 'absolute', zIndex: 'modal', mr: 34, mt: 0.9 }}><img src='/image/item/bg-1.svg' /></Box> : ""}
+                            {item == 1 ? <Box sx={{ position: 'absolute', zIndex: 'modal', mr: 36.5, mt: 0.9 }}><img src='/image/item/bg-1.svg' /></Box> : ""}
                             <Box className="Box-1" sx={{ bgcolor: '#fff', width: "81px", height: '81px', borderRadius: "10px", zIndex: 'tooltip' }}>
                                 <Box onClick={() => toggle(1)} sx={{ zIndex: 'tooltip' }}>
                                     <Stack justifyContent="center"
@@ -124,7 +124,7 @@ function itemmain() {
                             justifyContent="space-evenly"
                             alignItems="center"
                             spacing={0}>
-                            {item == 8 ? <Box sx={{ position: 'absolute', zIndex: 'modal', ml: 34, mt: 0.9 }}><img src='/image/item/bg-8.svg' /></Box> : ""}
+                            {item == 8 ? <Box sx={{ position: 'absolute', zIndex: 'modal', ml: 36.5, mt: 0.9 }}><img src='/image/item/bg-8.svg' /></Box> : ""}
                             <Box onClick={() => toggle(8)} className="Box-8" sx={{ bgcolor: '#fff', width: "81px", height: '81px', borderRadius: "10px" }}>
                                 <Stack justifyContent="center"
                                     alignItems="center" sx={{ pt: 0.5 }} >
@@ -145,7 +145,7 @@ function itemmain() {
                                     <img src='/image/item/6.svg' />
                                 </Stack>
                             </Box>
-                            {item == 5 ? <Box sx={{ position: 'absolute', zIndex: 'modal', mr: 34, mt: 0.9 }}><img src='/image/item/bg-5.svg' /></Box> : ""}
+                            {item == 5 ? <Box sx={{ position: 'absolute', zIndex: 'modal', mr: 36.5, mt: 0.9 }}><img src='/image/item/bg-5.svg' /></Box> : ""}
                             <Box onClick={() => toggle(5)} className="Box-5" sx={{ bgcolor: '#fff', width: "81px", height: '81px', borderRadius: "10px" }}>
                                 <Stack justifyContent="center"
                                     alignItems="center" sx={{ pt: 0.5 }} >

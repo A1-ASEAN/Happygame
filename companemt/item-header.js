@@ -34,7 +34,7 @@ const Top = () => {
 
 <Stack justifyContent="flex-start" alignItems="center" >
 
-        <Box height={"339px"} width={'381px'} >
+        <Box height={"339px"} width={'414px'} >
             <Box
                 sx={{
                     height: "34px",
@@ -61,11 +61,11 @@ const Top = () => {
                             alignItems="center"
 
                             spacing={1}>
-                            <Stack direction="row" alignItems="center" sx={{ pl: 1 }}>
+                            <Stack direction="row" alignItems="center" sx={{ pl: 2 }}>
                                 <img src="/image/taket.svg" />
                                 <Typography className={myFont.className} sx={{ pl: 1, fontSize: 30 }} color={"secondary"} >500</Typography>
                             </Stack>
-                            <Stack direction="row" alignItems="center" sx={{ pr: 1 }}>
+                            <Stack direction="row" alignItems="center" sx={{ pr: 2 }}>
 
                                 <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
                                 <img src="/image/book.svg" />

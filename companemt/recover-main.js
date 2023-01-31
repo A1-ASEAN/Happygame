@@ -5,6 +5,7 @@ import localFont from '@next/font/local'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { purple, red } from '@mui/material/colors';
+import Link from 'next/link';
 
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
@@ -84,11 +85,13 @@ function infectmain() {
                 <Typography className={myFont.className} sx={{ pt: 0, fontSize: "40px" }} >
                     BY CHAISTIAN BALE
                 </Typography>
-                <Button variant="contained" sx={{ height: "54px", width: '186px', mt: 5, boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }}>
-                    <Typography className={myFont.className} sx={{ p: 0, fontSize: "25px", height: "45px" }} >
-                        CONTINUE
-                    </Typography>
-                </Button>
+                <Link href={"/Home"}>
+                    <Button variant="contained" sx={{ height: "54px", width: '186px', mt: 5, boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }}>
+                        <Typography className={myFont.className} sx={{ p: 0, fontSize: "25px", height: "45px" }} >
+                            CONTINUE
+                        </Typography>
+                    </Button>
+                </Link>
 
 
             </Stack>
