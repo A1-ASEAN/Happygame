@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Box, Stack, Typography } from '@mui/material'
+import { Button, Box, Stack, Typography, Link } from '@mui/material'
 import localFont from '@next/font/local'
 import { Opacity } from '@mui/icons-material'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -58,11 +58,13 @@ function buy() {
                     </Button>
                 </Box>
                 <Box sx={{ pl:2,pt:3}}>
-                    <Button variant="contained" color='error' sx={{height: '54px',width:'186px',boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)"}} >
+                    <Link href='../Shop' underline="none">
+                    <Button  variant="contained" color='error' sx={{height: '54px',width:'186px',boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)"}} >
                     <Typography  className={myFont.className} sx={{fontSize: 30 ,height: '40px',mb:1}} >
                         CANCLE
                     </Typography>
                     </Button>
+                    </Link>
                 </Box>
 
             </Box>

@@ -4,7 +4,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import localFont from "@next/font/local";
 import Link from 'next/link';
 import Home from '../pages/Home'
-
+import Footer from '../companemt/Scan_footer';
 const myFont = localFont({ src: "../gamer_2/Gamer.ttf" });
 
 const theme = createTheme({
@@ -76,6 +76,7 @@ const Scan_body = () => {
 
           
         </Box>
+        <Footer />
       </Stack>
       
     </div></ThemeProvider>

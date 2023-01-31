@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Header from '@/companemt/Header-Reward';
-// import Body from"../companemt/Reward-body";
+import Body from"../companemt/Reward-body";
 import Footer from '../companemt/foternavbar';
 
 const Reward = () => {
@@ -13,7 +13,7 @@ const Reward = () => {
           <Header/>
         </Box>
         <Box flex={1} overflow={"hidden"} sx={{overflowY:"auto"}}>
-          {/* <Body/> */}
+          <Body/>
         </Box>
 
         <Box >

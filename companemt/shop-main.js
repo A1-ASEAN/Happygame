@@ -8,53 +8,12 @@ import Buy from './buy'
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 
-const Comfirm = ({ }) => {
-    return
-    <Box>
-        <Box bgcolor={"#000"} sx={{ opacity: 0.6, width: "100%", height: "100%", position: 'absolute', zIndex: "tooltip", top: 0 }}>
-
-        </Box>
-        <Box position={"absolute"} sx={{ top: "30%", right: "20%", zIndex: "tooltip", }} >
-            <ThemeProvider theme={theme}>
-                <Typography sx={{ pl: 0, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                    DO TOU WANT
-                </Typography >
-                <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                    TO BUY
-                </Typography>
-                <Typography sx={{ pl: 3, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                    5 HEALING
-                </Typography>
-                <Typography sx={{ pl: 6, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                    POTION?
-                </Typography>
-            </ThemeProvider>
-            <Box sx={{ pl: 2 }}>
-                <Button variant="contained" sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
-                    <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
-                        COMFIRM
-                    </Typography>
-                </Button>
-            </Box>
-            <Box sx={{ pl: 2, pt: 3 }}>
-                <Button variant="contained" color='error' sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
-                    <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
-                        CANCLE
-                    </Typography>
-                </Button>
-            </Box>
-
-        </Box>
-    </Box>
-}
 
 
 
 const Explain = ({toggle}) => {
 
-    
 
-   
     
     return <Stack direction="row" justifyContent="center" alignItems="center">
         <Box sx={{ width: '100%', height: '130' }}>
@@ -145,9 +104,9 @@ function shopmain() {
 
 
                 </Stack>
-                {itembuy == 1 ? <Explain  /> : ""}
-                {itembuy == 2 ? <Explain /> : ""}
-                {itembuy == 3 ? <Explain /> : ""}
+                {itembuy == 1 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 2 ? <Explain toggle={toggle}  /> : ""}
+                {itembuy == 3 ? <Explain toggle={toggle} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
@@ -172,9 +131,9 @@ function shopmain() {
 
 
                 </Stack>
-                {itembuy == 4 ? <Explain /> : ""}
-                {itembuy == 5 ? <Explain /> : ""}
-                {itembuy == 6 ? <Explain /> : ""}
+                {itembuy == 4 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 5 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 6 ? <Explain toggle={toggle} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
@@ -199,9 +158,9 @@ function shopmain() {
 
 
                 </Stack>
-                {itembuy == 7 ? <Explain /> : ""}
-                {itembuy == 8 ? <Explain /> : ""}
-                {itembuy == 9 ? <Explain />  : ""}
+                {itembuy == 7 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 8 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 9 ? <Explain toggle={toggle} />  : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
@@ -226,10 +185,11 @@ function shopmain() {
 
 
                 </Stack>
-                {itembuy == 10 ? <Explain /> : ""}
-                {itembuy == 11 ? <Explain /> : ""}
-                {itembuy == 12 ? <Buy /> : ""}
-                {itembuy == 13 ? <Buy toggle={()=> toggle}/> : ""}
+                {itembuy == 10 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 11 ? <Explain toggle={toggle} />: ""}
+                {itembuy == 12 ? <Explain toggle={toggle} />: ""}
+                {itembuy == 13 ? <Buy toggle={toggle}/> : ""}
+                {itembuy == 14 ? <Comfirm /> : ""}
             </Box>
             
         </Stack>

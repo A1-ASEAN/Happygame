@@ -1,7 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import Header from '@/companemt/Scan_header';
-import Footer from '../companemt/Scan_footer';
+// import Footer from '../companemt/Scan_footer';
 import Body from '../companemt/Scan_body';
 const Scan = () => {
     return <div>
@@ -19,9 +19,9 @@ const Scan = () => {
            <Body/>
           </Box>
 
-          <Box position={"relative"} zIndex={"tooltip"}>
-            <Footer />
-          </Box>
+          {/* <Box position={"relative"} zIndex={"tooltip"}>
+            
+          </Box> */}
         </Box>
       </Box>
 
