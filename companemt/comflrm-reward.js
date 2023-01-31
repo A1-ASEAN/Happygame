@@ -18,6 +18,15 @@ const theme = createTheme({
             main: '#0ACD7A',
         },
     },
+    breakpoints: {
+        values: {
+          mobile: 0,
+          iPadMini: 414,
+          iPadAir: 600,
+          iPadPro: 1023,
+          desktop: 1200,
+        },
+      },
 });
 
 function buy() {
@@ -40,14 +49,14 @@ function buy() {
             </Box>
             <Box position={"fixed"} sx={{ top: "30%", right: "20%", zIndex: "tooltip", }} >
                 <ThemeProvider theme={theme}>
-                    <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                    <Typography sx={{ pl: 5,pr: {iPadini:5,iPadAir:16,iPadPro:24}, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         DO TOU WANT
                     </Typography >
                     <Typography sx={{ pl: 7.5, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         TO REDEEM
                     </Typography>
 
-                    <Typography sx={{ pl:5.7, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                    <Typography sx={{ pl:4.2, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         THIS REDEEM?
                     </Typography>
 

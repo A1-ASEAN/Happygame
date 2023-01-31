@@ -3,7 +3,7 @@ import { Button, Box, Stack, Typography, Link } from '@mui/material'
 import localFont from '@next/font/local'
 import { Opacity } from '@mui/icons-material'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { styled } from '@mui/material/styles';
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 
@@ -18,7 +18,19 @@ const theme = createTheme({
             main: '#FFC05F',
         },
     },
+    breakpoints: {
+        values: {
+          mobile: 0,
+          iPadMini: 414,
+          iPadAir: 600,
+          iPadPro: 1023,
+          desktop: 1200,
+        },
+      },
 });
+
+
+
 
 function buy() {
     // const [itembuy, setItembuy] = useState(false)
@@ -35,9 +47,9 @@ function buy() {
             <Box bgcolor={"#000"} sx={{ opacity: 0.8, width: "100%", height: "100%", position: 'absolute', zIndex: "tooltip", top: 0, left: 0, right: 0 }}>
 
             </Box>
-            <Box position={"absolute"} sx={{ top: "30%", right: "20%", zIndex: "tooltip", }} >
+            <Box position={"absolute"} sx={{ top: "30%" , right: "20%", zIndex: "tooltip", }} >
                 <ThemeProvider theme={theme}>
-                    <Typography sx={{ pl: 0, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
+                    <Typography sx={{ pr: {iPadini:5,iPadAir:16,iPadPro:24}, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         DO TOU WANT
                     </Typography >
                     <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
