@@ -323,7 +323,7 @@ const Reward_body = () => {
 
             </Stack>
 
-            {click == 1 ? <Comfirm /> : ""}
+            {click == 1 ? <Comfirm toggle={toggle} /> : ""}
           </Box>
         </Stack>
       </ThemeProvider>

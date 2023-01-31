@@ -29,7 +29,7 @@ const theme = createTheme({
       },
 });
 
-function buy() {
+function buy({toggle}) {
     // const [itembuy, setItembuy] = useState(false)
 
 
@@ -70,13 +70,13 @@ function buy() {
                         </Link>
                     </Box>
                     <Box sx={{ pl: 7, pt: 3 }}>
-                        <Link href='../Reward' underline="none">
-                            <Button variant="contained" color='error' sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
+                        
+                            <Button onClick={() => toggle(3)} variant="contained" color='error' sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
                                 <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
                                     CANCLE
                                 </Typography>
                             </Button>
-                        </Link>
+                        
                     </Box>
                 </ThemeProvider>
 

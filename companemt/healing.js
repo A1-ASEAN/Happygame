@@ -22,15 +22,9 @@ const theme = createTheme({
 });
 
 
-function healing() {
+function healing({toggle}) {
 
-    const [item, setItem] = useState(<Itemmain />)
-
-
-    const toggle = (index) => {
-        setItem(index)
-        console.log(index)
-    }
+   
     return (
 
        
@@ -54,11 +48,13 @@ function healing() {
                             alignItems="center"
                             spacing={2}>
 
-                            <Button className={myFont.className} variant="contained" sx={{ fontSize: '26px', height: '30px', width: '82px' }} onClick={() => toggle(9)} >
+                            <Button className={myFont.className} variant="contained" sx={{ fontSize: '26px', height: '30px', width: '82px' }}  >
                                 EQUIP
 
                             </Button >
-                            <Button className={myFont.className} variant="contained" color="error" sx={{ fontSize: '26px', height: '30px', width: '82px' }}>
+                            <Button className={myFont.className} variant="contained" color="error" 
+                            sx={{ fontSize: '26px', height: '30px', width: '82px' }}
+                            onClick={() => toggle(10)}>
 
                                 DELETE
 

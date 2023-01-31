@@ -51,7 +51,7 @@ const Explain = ({toggle}) => {
                         <Button onClick={() => toggle(13)} variant="contained" color='success' className={myFont.className} fontSize={"30px"} sx={{ mb: 2, fontSize: 23, p: 0, boxShadow: "inset 0 -0.9em 0 -0.65em rgba(0,0,0,0.17)" }}>
                             BUY
                         </Button>
-                        <Button variant="contained" color='error' className={myFont.className} fontSize={"30px"} sx={{ mb: 2, fontSize: 23, p: 0, boxShadow: "inset 0 -0.9em 0 -0.65em rgba(0,0,0,0.17)" }}>
+                        <Button onClick={() => toggle(14)} variant="contained" color='error' className={myFont.className} fontSize={"30px"} sx={{ mb: 2, fontSize: 23, p: 0, boxShadow: "inset 0 -0.9em 0 -0.65em rgba(0,0,0,0.17)" }}>
                             cencle
                         </Button>
                     </Stack>
@@ -188,7 +188,7 @@ function shopmain() {
                 {itembuy == 10 ? <Explain toggle={toggle} /> : ""}
                 {itembuy == 11 ? <Explain toggle={toggle} />: ""}
                 {itembuy == 12 ? <Explain toggle={toggle} />: ""}
-                {itembuy == 13 ? <Comflrm /> : ""}
+                {itembuy == 13 ? <Comflrm toggle={toggle}/> : ""}
               
             </Box>
             
