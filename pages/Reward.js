@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import React from 'react';
 import Header from '@/companemt/Header-Reward';
 import Body from"../companemt/Reward-body";
-import Footer from '../companemt/foternavbar';
+import Footer from '../companemt/redeem-foternavbar';
 
 const Reward = () => {
     return <div>

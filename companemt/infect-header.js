@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Bettle from './Shop-bettle'
+import Bettle from './Shop-Navbar'
 import { Button } from '@mui/material';
 
 

@@ -1,6 +1,6 @@
 import { Box, Stack } from '@mui/system';
 import React from 'react';
-import Footer from "../companemt/foternavbar";
+import Footer from "../companemt/setting-foternavbar";
 import Header from "../companemt/Setting_header";
 import Body from "../companemt/Setting_body";
 

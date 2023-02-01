@@ -4,7 +4,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Main from '../companemt/Pro-main'
 import Header from '../companemt/Pro-header'
-import Footernavbar from '../companemt/foternavbar'
+import Footernavbar from '../companemt/redeem-foternavbar'
 
 
 export default function Profile() {

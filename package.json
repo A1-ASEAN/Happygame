@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@material-ui/styles": "^4.11.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
     "@mui/styled-engine-sc": "^5.11.0",
@@ -20,9 +21,14 @@
     "mediaquery": "^0.0.4",
     "next": "13.1.4",
     "react": "18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "18.2.0",
+    "react-native-color-wheel": "^0.1.7",
     "react-responsive": "^9.0.2",
-    "styled-components": "^5.3.6"
+    "react-wheel-of-prizes": "^1.0.9",
+    "semantic-ui-react": "^2.1.4",
+    "styled-components": "^5.3.6",
+    "react-native-wheel-of-fortune": "1.5.4"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1"

@@ -11,10 +11,18 @@ const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 
 
-const Explain = ({toggle}) => {
+const Explain = ({ toggle }) => {
+
+    const [counter, setCounter] = useState(1);
+
+    const clickplas = () => {
+        setCounter((prevState) => +prevState + 1)
+    };
+    const clickdelete = () => {
+        setCounter((prevState) => +prevState - 1)
+    }
 
 
-    
     return <Stack direction="row" justifyContent="center" alignItems="center">
         <Box sx={{ width: '100%', height: '130' }}>
             <Stack direction="row"
@@ -26,11 +34,7 @@ const Explain = ({toggle}) => {
                     </Typography>
                     <Typography
                         fontSize={"12px"}>
-                        หมั่นโถว คาร์โก้เคลียร์สป็อต เอสเพรสโซ กู๋ปาสเตอร์
-                        บร็อคโคลี ฮิแฮปปี้ทับซ้อน กาญจนาภิเษกวิลล์ฮากกา
-                        สต็อกดีพาร์ตเมนท์แคทวอล์คแฟรนไชส์ เทปไฟแนนซ์
-                        เอเซียคอร์ปอเรชั่น ไตรมาสตุ๊ด เทรดอุปนายก
-                        แอดมิสชันวัคค์ป๊อกเซอร์ไพรส์เซี้ยว
+                        บางคนกลัวผีเวลาเพ่ง" ผีอยู่ที่ไหนล่ะ "วันหนึ่ง ๆ ฝังกี่ศพ ที่คนตายไปกลัว" ที่ฝังในตัวเองไม่กลัว กี่ศพล่ะวันนี้ ผีปลาทู ปูเค็ม ผีวัว ผีควาย ผีเป็ด ไก่ สุกร "เต็มอยู่ในท้องโม๊ด" ทำไมไม่กลัวล่ะ
                     </Typography>
                 </Box>
                 <Box width={"110px"} height={"100%"}>
@@ -41,9 +45,24 @@ const Explain = ({toggle}) => {
                                 alignItems="center" spacing={0}>
 
 
-                                <Box sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px' }}><Typography fontSize={"19px"} sx={{ ml: 1.5 }}>-</Typography></Box>
-                                <Typography fontSize={"40px"} sx={{ width: '20px', pb: 1, pl: 0.5 }} className={myFont.className} >5</Typography>
-                                <Box sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px' }}><Typography fontSize={"19px"} sx={{ ml: 1.2 }}>+</Typography></Box>
+                                <Box onClick={clickdelete} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                    <Typography fontSize={"19px"} sx={{ ml: 1.5 }}>
+                                        -
+                                    </Typography>
+                                </Box>
+
+                                <Typography fontSize={"40px"} sx={{ width: '20px', pb: 1, pl: 0.5 }} className={myFont.className} >
+                                    
+                                {counter}
+                                
+                                </Typography>
+                                <Box onClick={clickplas} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                    <Typography fontSize={"19px"} sx={{ ml: 1.2 }}>
+                                        +
+
+                                    </Typography>
+
+                                </Box>
 
                             </Stack>
                         </Box>
@@ -79,7 +98,7 @@ function shopmain() {
 
         <Stack alignItems="center">
 
-            <Box width={'414px'} sx={{pl:2,pr:2}}>
+            <Box width={'414px'} sx={{ pl: 2, pr: 2,pt:3 }}>
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
@@ -105,7 +124,7 @@ function shopmain() {
 
                 </Stack>
                 {itembuy == 1 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 2 ? <Explain toggle={toggle}  /> : ""}
+                {itembuy == 2 ? <Explain toggle={toggle} /> : ""}
                 {itembuy == 3 ? <Explain toggle={toggle} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
@@ -113,18 +132,18 @@ function shopmain() {
 
                     <Box onClick={() => toggle(4)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/4.svg" />
+                        <img src="/image/shop/1.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(5)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/5.svg" />
+                        <img src="/image/shop/2.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(6)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/6.svg" />
+                        <img src="/image/shop/3.svg" />
 
                     </Box>
 
@@ -134,64 +153,13 @@ function shopmain() {
                 {itembuy == 4 ? <Explain toggle={toggle} /> : ""}
                 {itembuy == 5 ? <Explain toggle={toggle} /> : ""}
                 {itembuy == 6 ? <Explain toggle={toggle} /> : ""}
-                <Stack direction="row"
-                    justifyContent="space-around"
-                    alignItems="center">
+                
+               
+                
+                {itembuy == 13 ? <Comflrm toggle={toggle} /> : ""}
 
-                    <Box onClick={() => toggle(7)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/7.svg" />
-
-                    </Box>
-                    <Box onClick={() => toggle(8)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/8.svg" />
-
-                    </Box>
-
-                    <Box onClick={() => toggle(9)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/9.svg" />
-
-                    </Box>
-
-
-
-                </Stack>
-                {itembuy == 7 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 8 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 9 ? <Explain toggle={toggle} />  : ""}
-                <Stack direction="row"
-                    justifyContent="space-around"
-                    alignItems="center">
-
-                    <Box onClick={() => toggle(10)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/4.svg" />
-
-                    </Box>
-                    <Box onClick={() => toggle(11)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/5.svg" />
-
-                    </Box>
-
-                    <Box onClick={() => toggle(12)} sx={{ zIndex: 'modal' }} position={'relative'}>
-
-                        <img src="/image/shop/6.svg" />
-
-                    </Box>
-
-
-
-                </Stack>
-                {itembuy == 10 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 11 ? <Explain toggle={toggle} />: ""}
-                {itembuy == 12 ? <Explain toggle={toggle} />: ""}
-                {itembuy == 13 ? <Comflrm toggle={toggle}/> : ""}
-              
             </Box>
-            
+
         </Stack>
 
     )

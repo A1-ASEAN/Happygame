@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Header from '../companemt/item-header'
-import Footernavbar from '../companemt/foternavbar'
+import Footernavbar from '../companemt/redeem-foternavbar'
 import Mian from '../companemt/item-main'
 
 function item() {

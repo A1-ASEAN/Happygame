@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Bettle from './Shop-bettle'
+
 import { Button } from '@mui/material';
 
 
@@ -29,7 +29,7 @@ const Top = () => {
     return (
 
         <Box maxWidth="100%">
-            <Box sx={{ height: "160px", width: '100%', position: 'relative', }}>
+            <Box sx={{ height: "68px", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'drawer', height: "67px" }}>
                         <img src='/image/2bg.svg' />
@@ -61,20 +61,7 @@ const Top = () => {
 
                 
 
-                <Stack justifyContent="center"
-                    alignItems="center">
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'modal',
-                        pt: 6,
-
-
-
-                    }}>
-                        <img src='/image/wall.png' />
-                    </Box >
-                    <Bettle />
-                </Stack>
+                
             </Box>
 
 

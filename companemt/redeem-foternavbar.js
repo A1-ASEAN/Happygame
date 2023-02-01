@@ -14,7 +14,7 @@ import Settingb from '../public/image/footer/Setting-b.svg'
 
 function chang() {
   const [state, setstate] = useState(false)
-
+ 
 
   const toggle = (index) => {
     setstate(index)
@@ -31,7 +31,9 @@ function chang() {
           alignItems="flex-end">
             <Link href='../Reward' underline="none">
           <Button variant="text" onClick={() => toggle(1)}>
-            {state == 1 ? <Redeemb /> : <Redeem />}
+         <Redeemb /> 
+          
+          
           </Button>
           </Link>
           <Link href='../Shop' underline="none">

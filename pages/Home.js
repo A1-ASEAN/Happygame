@@ -9,7 +9,7 @@ import localFont from '@next/font/local'
 import Butoom from '../companemt/buttom'
 import { createTheme } from '@mui/material/styles';
 import LukyIcon from '../companemt/luky-icon'
-import Footernavbar from '../companemt/foternavbar'
+import Footernavbar from '../companemt/profil-foternavbar'
 
 
 
