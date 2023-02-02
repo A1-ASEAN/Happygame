@@ -24,7 +24,7 @@ function chang() {
   return (
 
     <Stack alignItems="center">
-      <Box sx={{ width: "414px", height: "70px", bottom: 0, left: 0, right: 0, zIndex: 'modal', bgcolor: "#fff" }}>
+      <Box sx={{ width: "414px", height: "70px", bottom: 0, left: 0, right: 0, zIndex: 'modal', bgcolor: "#fff",pl:3,pr:3 }}>
 
         <Stack direction="row"
           justifyContent="space-between"

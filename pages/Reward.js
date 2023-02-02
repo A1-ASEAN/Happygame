@@ -8,11 +8,11 @@ const Reward = () => {
     return <div>
         
       <Box height={'100vh'} overflow={"hidden"}  maxWidth={"100%"} sx={{bgcolor:"#f1f1f1f1 "}}>
-        <Box height={"100%"} display={"flex"} flexDirection={"column"}>
-        <Box>
+        <Box  height={"100%"} display={"flex"} flexDirection={"column"}>
+        <Box  zIndex={"tooltip"}>
           <Header/>
         </Box>
-        <Box flex={1} overflow={"hidden"} sx={{overflowY:"auto"}}>
+        <Box zIndex={"modal"} flex={1} overflow={"hidden"} sx={{overflowY:"auto"}}>
           <Body/>
         </Box>
 

@@ -88,7 +88,7 @@ const Top = () => {
 
                     <Stack justifyContent="center"
                         alignItems="center" sx={{ mt: 2 }}>
-                        <img src='/image/pro.svg' />
+                        <img src='/image/PF1.png' />
                     </Stack>
                     <Stack justifyContent="center"
                         alignItems="center"

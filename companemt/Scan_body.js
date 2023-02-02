@@ -78,7 +78,7 @@ const Scan_body = () => {
 
           
         </Box>
-        <Footer />
+        
       </Stack>
       
     </div></ThemeProvider>

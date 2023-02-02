@@ -24,7 +24,7 @@ const theme = createTheme({
 const Header_Reward = () => {
   return (
     <Stack alignItems={"center"}>
-    <Box maxWidth={"414px"}>
+    <Box maxWidth={"414px"}height={"160px"}>
       <ThemeProvider theme={theme}>
         <Box
           sx={{
@@ -73,7 +73,7 @@ const Header_Reward = () => {
                 </Box>
               </Stack>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} >
               <Stack
                 direction="column"
                 justifyContent="flex-start"
@@ -82,7 +82,7 @@ const Header_Reward = () => {
               >
                 <Typography
                   className={myFont.className}
-                  sx={{ fontSize: "25px" }}
+                  sx={{ fontSize: "25px",pr:4 }}
                 >
                   CHRISTOPHER NOLAN
                 </Typography>
@@ -93,16 +93,16 @@ const Header_Reward = () => {
                     alignItems="center"
                     spacing={2}
                   >
-                    <Box position={"absolute"} sx={{ pb: 4.2, pr: 3 }}>
+                    <Box position={"absolute"} sx={{ pb: 4.8, pr: 3 }}>
                       <Typography
                         color={"secondary"}
                         className={myFont.className}
                         sx={{ fontSize: "50px", height: "50px" }}
                       >
-                        500 P.
+                        99999 
                       </Typography>
                     </Box>
-                    <Box sx={{ pl: 12 }}>
+                    <Box sx={{ pl: 11 }}>
                       <img src="/image/taket.svg" />
                     </Box>
                   </Stack>
@@ -110,10 +110,11 @@ const Header_Reward = () => {
               </Stack>
             </Grid>
           </Grid>
-        </Box>
-        <Box>
+          <Box zIndex={"tooltip"}>
           <img src="/image/Reward_page/redflag.svg" />
         </Box>
+        </Box>
+        
       </ThemeProvider>
     </Box>
     </Stack>
