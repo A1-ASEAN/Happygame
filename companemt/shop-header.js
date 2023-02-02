@@ -29,7 +29,7 @@ const Top = () => {
     return (
 
         <Box maxWidth="100%">
-            <Box sx={{ height: "68px", width: '100%', position: 'relative', }}>
+            <Box sx={{ height: "75px", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'drawer', height: "67px" }}>
                         <img src='/image/2bg.svg' />

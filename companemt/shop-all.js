@@ -10,18 +10,11 @@ const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 // item 1
 
-const Explain = ({ toggle }) => {
+const Explain = ({ toggle,count,setcount }) => {
 
-    const [counter, setCounter] = useState(1);
- 
+     
 
-    const clickplas = () => {
-        setCounter((prevState) => +prevState + 1)
-    };
-    const clickdelete = () => {
-        setCounter((prevState) => +prevState - 1)
-    }
-    
+  
 
 
     return <Stack direction="row" justifyContent="center" alignItems="center">
@@ -47,7 +40,7 @@ const Explain = ({ toggle }) => {
                                 alignItems="center" spacing={0}>
 
 
-                                <Box onClick={clickdelete} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount( count == 0 ? 0 :count -1)}} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.5 }}>
                                         -
                                     </Typography>
@@ -55,10 +48,10 @@ const Explain = ({ toggle }) => {
 
                                 <Typography fontSize={"40px"} sx={{ width: '20px', pb: 1, pl: 0.5 }} className={myFont.className} >
                                     
-                                {counter}
+                                {count}
                                 
                                 </Typography>
-                                <Box onClick={clickplas} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount( count +1)}} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.2 }}>
                                         +
                                     </Typography>
@@ -84,16 +77,11 @@ const Explain = ({ toggle }) => {
 
 // item 2
 
-const Explain2 = ({ toggle }) => {
+const Explain2 = ({ toggle ,count,setcount}) => {
 
-    const [counter, setCounter] = useState(1);
+    
 
-    const clickplas = () => {
-        setCounter((prevState) => +prevState + 1)
-    };
-    const clickdelete = () => {
-        setCounter((prevState) => +prevState - 1)
-    }
+    
 
 
     return <Stack direction="row" justifyContent="center" alignItems="center">
@@ -119,7 +107,7 @@ const Explain2 = ({ toggle }) => {
                                 alignItems="center" spacing={0}>
 
 
-                                <Box onClick={clickdelete} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount(count ==0 ? 0 : count -1)  }} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.5 }}>
                                         -
                                     </Typography>
@@ -127,10 +115,10 @@ const Explain2 = ({ toggle }) => {
 
                                 <Typography fontSize={"40px"} sx={{ width: '20px', pb: 1, pl: 0.5 }} className={myFont.className} >
                                     
-                                {counter}
+                                {count}
                                 
                                 </Typography>
-                                <Box onClick={clickplas} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount( count +1)}} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.2 }}>
                                         +
 
@@ -157,16 +145,9 @@ const Explain2 = ({ toggle }) => {
 // item 3
 
 
-const Explain3 = ({ toggle }) => {
+const Explain3 = ({ toggle,count,setcount}) => {
 
-    const [counter, setCounter] = useState(1);
-
-    const clickplas = () => {
-        setCounter((prevState) => +prevState + 1)
-    };
-    const clickdelete = () => {
-        setCounter((prevState) => +prevState - 1)
-    }
+    
 
 
     return <Stack direction="row" justifyContent="center" alignItems="center">
@@ -192,7 +173,7 @@ const Explain3 = ({ toggle }) => {
                                 alignItems="center" spacing={0}>
 
 
-                                <Box onClick={clickdelete} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount( count ==0 ? 0 : count -1)}} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.5 }}>
                                         -
                                     </Typography>
@@ -200,10 +181,10 @@ const Explain3 = ({ toggle }) => {
 
                                 <Typography fontSize={"40px"} sx={{ width: '20px', pb: 1, pl: 0.5 }} className={myFont.className} >
                                     
-                                {counter}
+                                {count}
                                 
                                 </Typography>
-                                <Box onClick={clickplas} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
+                                <Box onClick={()=>{setcount( count +1)}} sx={{ bgcolor: '#0963F3', width: '30px', height: "30px", borderRadius: '5px', cursor: "pointer" }}>
                                     <Typography fontSize={"19px"} sx={{ ml: 1.2 }}>
                                         +
 
@@ -231,7 +212,7 @@ const Explain3 = ({ toggle }) => {
 function shopmain() {
 
     const [itembuy, setItembuy] = useState(false)
-
+    const [count, setcount] = useState(1)
 
     const toggle = (index) => {
         setItembuy(index)
@@ -250,138 +231,138 @@ function shopmain() {
                     justifyContent="space-around"
                     alignItems="center">
 
-                    <Box onClick={() => toggle(1)} sx={{ zIndex: 'modal' }} position={'relative'}>
+                    <Box onClick={() =>{ toggle(1) }} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/1.svg" />
+                        < img  onClick={() =>{ setcount(1) }} src="/image/shop/1.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(2)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/2.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/2.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(3)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/3.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/3.svg" />
 
                     </Box>
 
 
 
                 </Stack>
-                {itembuy == 1 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 2 ? <Explain2 toggle={toggle} /> : ""}
-                {itembuy == 3 ? <Explain3 toggle={toggle} /> : ""}
+                {itembuy == 1 ? <Explain toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 2 ? <Explain2 toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 3 ? <Explain3 toggle={toggle}count={count}setcount={setcount} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
 
                     <Box onClick={() => toggle(4)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/4.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/4.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(5)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/5.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/5.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(6)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/6.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/6.svg" />
 
                     </Box>
 
 
 
                 </Stack>
-                {itembuy == 4 ? <Explain2 toggle={toggle} /> : ""}
-                {itembuy == 5 ? <Explain3 toggle={toggle} /> : ""}
-                {itembuy == 6 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 4 ? <Explain2 toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 5 ? <Explain3 toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 6 ? <Explain toggle={toggle}count={count}setcount={setcount} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
 
                     <Box onClick={() => toggle(7)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/7.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/7.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(8)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/8.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/8.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(9)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/9.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/9.svg" />
 
                     </Box>
 
 
 
                 </Stack>
-                {itembuy == 7 ? <Explain3 toggle={toggle} /> : ""}
-                {itembuy == 8 ? <Explain2 toggle={toggle} /> : ""}
-                {itembuy == 9 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 7 ? <Explain3 toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 8 ? <Explain2 toggle={toggle}count={count}setcount={setcount} /> : ""}
+                {itembuy == 9 ? <Explain toggle={toggle}count={count}setcount={setcount} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
                     alignItems="center">
 
                     <Box onClick={() => toggle(10)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/4.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/4.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(11)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/5.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/5.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(12)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/6.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/6.svg" />
 
                     </Box>
 
 
 
                 </Stack>
-                {itembuy == 10 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 11 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 12 ? <Explain toggle={toggle} /> : ""}
-                {itembuy == 13 ? <Comflrm toggle={toggle} /> : ""}
+                {itembuy == 10 ? <Explain toggle={toggle} count={count}setcount={setcount}/> : ""}
+                {itembuy == 11 ? <Explain toggle={toggle} count={count}setcount={setcount}/> : ""}
+                {itembuy == 12 ? <Explain toggle={toggle} count={count}setcount={setcount}/> : ""}
+                {itembuy == 13 ? <Comflrm toggle={toggle} count={count} /> : ""}
                 <Stack direction="row"
                     justifyContent="space-around"
-                    alignItems="center">
+                    alignItems="center"> 
 
                     <Box onClick={() => toggle(14)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/4.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/4.svg" />
 
                     </Box>
                     <Box onClick={() => toggle(15)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/5.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/5.svg" />
 
                     </Box>
 
                     <Box onClick={() => toggle(16)} sx={{ zIndex: 'modal' }} position={'relative'}>
 
-                        <img src="/image/shop/6.svg" />
+                        <img onClick={() =>{ setcount(1) }} src="/image/shop/6.svg" />
 
                     </Box>
 
 
 
                 </Stack>
-                {itembuy == 14 ? <Explain2 toggle={toggle} /> : ""}
-                {itembuy == 15 ? <Explain3 toggle={toggle} /> : ""}
-                {itembuy == 16 ? <Explain toggle={toggle} /> : ""}
+                {itembuy == 14 ? <Explain2 toggle={toggle} count={count}setcount={setcount}/> : ""}
+                {itembuy == 15 ? <Explain3 toggle={toggle} count={count}setcount={setcount}/> : ""}
+                {itembuy == 16 ? <Explain toggle={toggle} count={count}setcount={setcount}/> : ""}
 
             </Box>
 

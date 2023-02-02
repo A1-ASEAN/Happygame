@@ -1,4 +1,4 @@
-import { BottomNavigation, Box, Button, Link, Paper, Stack, Typography } from '@mui/material';
+import { BottomNavigation, Box, Button, createTheme, Link, Paper, Stack, Typography } from '@mui/material';
 import { useState } from 'react';
 import Misson from '../public/image/footer/Mission.svg'
 import Missonb from '../public/image/footer/Missin-b.svg'
@@ -12,6 +12,29 @@ import Setting from '../public/image/footer/Setting.svg'
 import Settingb from '../public/image/footer/Setting-b.svg'
 
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: "#fff",
+    },
+    secondary: {
+      // This is green.A700 as hex.
+      main: "#FFC05F",
+    },
+  },
+  breakpoints: {
+    values: {
+      mobile: 0,
+      iPadMini: 414,
+      iPadAir: 600,
+      iPadPro: 1023,
+
+      desktop: 1200,
+    },
+  },
+});
+
 function chang() {
   const [state, setstate] = useState(false)
  
@@ -24,7 +47,7 @@ function chang() {
   return (
 
     <Stack alignItems="center">
-      <Box sx={{ width: "414px", height: "70px", bottom: 0, left: 0, right: 0, zIndex: 'modal', bgcolor: "#fff" }}>
+      <Box sx={{ width: "414px", height: "70px", bottom: 0, left: 0, right: 0, zIndex: 'modal', bgcolor: "#fff",pl:3,pr:3 }}>
 
         <Stack direction="row"
           justifyContent="space-between"

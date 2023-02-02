@@ -33,7 +33,7 @@ const theme = createTheme({
 
 
 
-function buy({toggle}) {
+function buy({toggle,count,setcount}) {
     // const [itembuy, setItembuy] = useState(false)
 
 
@@ -57,7 +57,7 @@ function buy({toggle}) {
                         TO BUY
                     </Typography>
                     <Typography sx={{ pl: 3, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
-                        5 HEALING
+                        {count} HEALING
                     </Typography>
                     <Typography sx={{ pl: 6, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         POTION?
@@ -75,7 +75,7 @@ function buy({toggle}) {
                 <Box sx={{ pl: 2, pt: 3 }}>
                     
                         <Button onClick={() => toggle(14)} variant="contained" color='error' sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
-                            <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
+                            <Typography  className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
                                 CANCLE
                             </Typography>
                         </Button>

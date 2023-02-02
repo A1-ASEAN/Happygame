@@ -26,7 +26,7 @@ const theme = createTheme({
 const Showbaryallow = ()=>{
     return <Box sx={{
         position: 'absolute',
-        pt: 0.3,
+        pt: 0,
         pl: 0.4,
         zIndex: 'tooltip',
     }}>
@@ -48,8 +48,8 @@ const Top = ({secpage}) => {
         <ThemeProvider theme={theme}>
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
-                    height: '100%', width: "350px",
-                    mt: 5,
+                    height: '50px', width: "350px",
+                    mt: 3.8,
                     zIndex: 'tooltip',
                 }}>
                     <Stack direction="row"
@@ -62,8 +62,8 @@ const Top = ({secpage}) => {
                             {tab == 1 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.3,
-                                    pl: 0.4,
+                                    pt: 0.5,
+                                    pl: 0.7,
                                     zIndex: 'tooltip',
                                 }}>
                                     <Box sx={{ width: 40, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
@@ -79,7 +79,7 @@ const Top = ({secpage}) => {
                             {tab == 2 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.29,
+                                    pt: 0.49,
                                     pl: 0.8,
                                     zIndex: 'tooltip',
                                 }}>
@@ -95,7 +95,7 @@ const Top = ({secpage}) => {
                             {tab == 3 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.29,
+                                    pt: 0.49,
                                     pl: 0.6,
                                     zIndex: 'tooltip',
                                 }}>
