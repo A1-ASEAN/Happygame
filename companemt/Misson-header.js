@@ -37,7 +37,7 @@ const Top = () => {
                     <Box sx={{ position: 'absolute', zIndex: 'tooltip', mt: 2, height: '20px' }}>
                         <  img src='/image/mission/M-flower.svg' />
                     </Box >
-                    <Box maxWidth="390px" sx={{ position: 'absolute ', zIndex: 'tooltip', }}>
+                    <Box width="100%" sx={{ position: 'absolute ', zIndex: 'tooltip', }}>
                         <ThemeProvider theme={theme}>
                             <Stack direction="row"
                                 justifyContent="space-between"
@@ -86,7 +86,7 @@ const Top = () => {
 
 
                     }}>
-                        <img src='/image/wall.png' />
+                        <img src='/image/wall_bar.png' />
                     </Box >
                     <Bettle />
                 </Stack>

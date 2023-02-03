@@ -49,15 +49,15 @@ export default function Home() {
             <Header />
             {/* wall */}
             <Stack justifyContent="center" alignItems="center">
-              <Box
+              <Box overflow={"hidden"}
                 sx={{
-                  maxWidth: "414px",
+                  maxWidth: "100%",
                   position: { mobile: "fixed", iPadAir: "absolute" },
                   zIndex: "modal",
-                  pt: 4.3
+                  pt: 3 
                 }}
               >
-                <img src="/image/wall.png" />
+                <img src="/image/wall_bar.png" />
               </Box>
               {/* Font ALL ATTACK DEDEND */}
 

@@ -24,7 +24,7 @@ const theme = createTheme({
 const Header_Reward = () => {
   return (
     <Stack alignItems={"center"}>
-    <Box maxWidth={"414px"}height={"160px"}>
+    <Box maxWidth={"100%"}height={"160px"}>
       <ThemeProvider theme={theme}>
         <Box
           sx={{

@@ -26,7 +26,7 @@ const Setting_header = () => {
     <div>
       {" "}
       <Stack alignItems={"center"}>
-        <Box maxWidth={"414px"}>
+        <Box width={"100%"}>
           <Box>
             <Box sx={{ height: "105px", width: "100%", position: "relative" }}>
               <Stack alignItems="center">
@@ -46,7 +46,7 @@ const Setting_header = () => {
                   <img src="/image/flower-bg.svg" />
                 </Box>
                 <Box
-                  maxWidth="414px"
+                  width="100%"
                   sx={{ position: "absolute ", zIndex: "tooltip" }}
                 >
                   <ThemeProvider theme={theme}>

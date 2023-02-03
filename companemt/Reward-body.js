@@ -38,15 +38,15 @@ const Reward_body = () => {
     <div>
       <ThemeProvider theme={theme}>
         <Stack alignItems={"center"}>
-          <Box maxWidth={"414px"} sx={{pt:"30px"}}>
+          <Box width={"100%"} sx={{pt:"30px"}}>
             <Stack alignItems={"center"}>
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid  xs={4} >
+                  <Grid  item xs={4} sm={2} lg={1} >
                     <img src="/image/Reward_page/reward_item1.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 1 }}>
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 1 }}>
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         Starbuck gift card A 200 THB voucher{" "}
@@ -65,7 +65,7 @@ const Reward_body = () => {
                    </Stack>
                   </Grid>
 
-                  <Grid  xs={4} >
+                  <Grid item xs={4}   >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }}>
 
@@ -89,11 +89,11 @@ const Reward_body = () => {
 
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid xs={4}>
+                  <Grid item xs={4} sm={2} lg={1}>
                     <img src="/image/Reward_page/reward_item2.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 1 }} >
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 1 }} >
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         Major cineplex ticket 2 seat ticket
@@ -112,7 +112,7 @@ const Reward_body = () => {
                     </Stack>
                   </Grid>
 
-                  <Grid  xs={4}  >
+                  <Grid  item xs={4}   >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }}>
 
@@ -136,11 +136,11 @@ const Reward_body = () => {
 
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid  xs={4}>
+                  <Grid item  xs={4} sm={2} lg={1}>
                     <img src="/image/Reward_page/reward_item3.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 1 }} >
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 1 }} >
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         Central gift card A 500 THB voucher
@@ -159,7 +159,7 @@ const Reward_body = () => {
                     </Stack>
                   </Grid>
 
-                  <Grid  xs={4} >
+                  <Grid item  xs={4}  >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }} >
 
@@ -183,11 +183,11 @@ const Reward_body = () => {
 
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid  xs={4} >
+                  <Grid item  xs={4} sm={2} lg={1} >
                     <img src="/image/Reward_page/reward_item3.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 1 }}>
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 1 }}>
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         Central gift card A 1,000 THB voucher
@@ -206,7 +206,7 @@ const Reward_body = () => {
                     </Stack>
                   </Grid>
 
-                  <Grid  xs={4} >
+                  <Grid item  xs={4}  >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }}>
 
@@ -230,11 +230,11 @@ const Reward_body = () => {
 
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid  xs={4}>
+                  <Grid item  xs={4} sm={2} lg={1}>
                     <img src="/image/Reward_page/reward_item5.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 1 }} >
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 1 }} >
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         2,000 THB <br /> A 2,000 THB money
@@ -253,7 +253,7 @@ const Reward_body = () => {
                     </Stack>
                   </Grid>
 
-                  <Grid  xs={4} >
+                  <Grid item  xs={4}  >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }}>
 
@@ -277,11 +277,11 @@ const Reward_body = () => {
 
               <Box sx={{ bgcolor: "#ffff", borderRadius: "8px", height: "100px", mt: 1, width: "98%", }}>
                 <Grid container direction={"row"}>
-                  <Grid  xs={4}>
+                  <Grid item  xs={4} sm={2} lg={1}>
                     <img src="/image/Reward_page/reward_item6.png" />
                   </Grid>
 
-                  <Grid  xs={4} sx={{ p: 1, pt: 2 }} >
+                  <Grid item  xs={4} sm={6} lg={7} sx={{ p: 1, pt: 2 }} >
                     <Box paddingLeft={1}>
                       <Typography fontSize={"11.5px"}>
                         Mercedez Benz <br /> SLK 2020
@@ -300,7 +300,7 @@ const Reward_body = () => {
                     </Stack>
                   </Grid>
 
-                  <Grid  xs={4} >
+                  <Grid item  xs={4}  >
                     <Stack justifyContent="flex-end"
                       alignItems="flex-end" sx={{ pr: 2, pt: 5 }}>
 

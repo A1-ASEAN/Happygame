@@ -38,7 +38,7 @@ export default function Butoom() {
 
 
                                 <Link href='/Scan'>
-                                <Button color="primary" variant="contained" sx={{ boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", mt: 1, width: 180, height: 45, zIndex: 'tooltip' }}   >
+                                <Button color="primary" variant="contained" sx={{ boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", mt: 1, width: 180, height: 60, zIndex: 'tooltip' }}   >
                                     <Stack justifyContent="center"
                                         alignItems="center"
                                         direction="column"
