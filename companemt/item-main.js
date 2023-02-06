@@ -7,7 +7,7 @@ import Bottom from './buttom'
 import { useState } from 'react';
 import Healling from './healing'
 import Button from '@mui/material/Button';
-import { Grid, SvgIcon } from '@mui/material';
+import { Grid} from '@mui/material';
 import Window from '../companemt/SVGS/window'
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
@@ -106,124 +106,122 @@ function itemmain() {
                 spacing={3} sx={{ mt: "5px" }}>
                 <Grid item xs={3} sm={2.4} md={2} >
                     <Stack alignItems="center">
-
-
-                        {item == 1 ? 
-                        <Box onClick={() => toggle(1)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/1.svg' />
+                        {item == 1 ?
+                            <Box onClick={() => toggle(1)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/1.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(1)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/1.svg' />
+                            :
+                            <Box onClick={() => toggle(1)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/1.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
 
                     </Stack>
                 </Grid>
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                        {item == 2 ? 
-                        <Box onClick={() => toggle(2)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/2.svg' />
+                        {item == 2 ?
+                            <Box onClick={() => toggle(2)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/2.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(2)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/2.svg' />
+                            :
+                            <Box onClick={() => toggle(2)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/2.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                    {item == 3 ? 
-                        <Box onClick={() => toggle(3)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/3.svg' />
+                        {item == 3 ?
+                            <Box onClick={() => toggle(3)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/3.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(3)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/3.svg' />
+                            :
+                            <Box onClick={() => toggle(3)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/3.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                    {item == 4 ? 
-                        <Box onClick={() => toggle(4)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/4.svg' />
+                        {item == 4 ?
+                            <Box onClick={() => toggle(4)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px red, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/4.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(4)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/4.svg' />
+                            :
+                            <Box onClick={() => toggle(4)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/4.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                    {item == 5 ? 
-                        <Box onClick={() => toggle(5)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/5.svg' />
+                        {item == 5 ?
+                            <Box onClick={() => toggle(5)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/5.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(5)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/5.svg' />
+                            :
+                            <Box onClick={() => toggle(5)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/5.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>
 
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                    {item == 6 ? 
-                        <Box onClick={() => toggle(6)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/6.svg' />
+                        {item == 6 ?
+                            <Box onClick={() => toggle(6)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/6.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(6)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/6.svg' />
+                            :
+                            <Box onClick={() => toggle(6)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/6.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>
                 <Grid item xs={3} sm={2.4} md={2} sx={{ borderRadius: "15px" }}>
                     <Stack alignItems="center">
-                    {item == 7 ? 
-                        <Box onClick={() => toggle(7)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/5.svg' />
+                        {item == 7 ?
+                            <Box onClick={() => toggle(7)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px", boxShadow: " 0 0 30px #00D330, 0 0 0px darkblue" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/5.svg' />
+                                </Box>
                             </Box>
-                        </Box> 
-                        : 
-                        <Box onClick={() => toggle(7)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
-                            <Box paddingTop={0.8} paddingLeft={0.8}>
-                                <img src='/image/item/5.svg' />
+                            :
+                            <Box onClick={() => toggle(7)} sx={{ bgcolor: '#f1f1f1', height: '82px', width: '82px', borderRadius: "15px" }}>
+                                <Box paddingTop={0.8} paddingLeft={0.8}>
+                                    <img src='/image/item/5.svg' />
+                                </Box>
                             </Box>
-                        </Box>
                         }
                     </Stack>
                 </Grid>

@@ -64,6 +64,7 @@ export default function Home() {
               <Navbar secpage={secpage} />
             </Stack>
           </Box>
+          </ThemeProvider>
 
           <Box flex={1} overflow={"hidden"} sx={{ overflowY: "auto" }}>
             {page == "ALL" ? <Main_All /> : ""}
@@ -75,7 +76,7 @@ export default function Home() {
           <Box>
             <Footernavbar />
           </Box>
-        </ThemeProvider>
+        
       </Box>
     </Box>
   );
