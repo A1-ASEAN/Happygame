@@ -346,14 +346,14 @@ function shopmain() {
                 </Grid>
                 <Grid item xs={4} sm={2}  >
                     <Stack alignItems="center">
-                        <Box onClick={() => toggle(13)} sx={{ width: { xs: "120px", }, height: '163px' }}>
+                        <Box onClick={() => toggle(15)} sx={{ width: { xs: "120px", }, height: '163px' }}>
                             <img src='/image/shop/5.svg' />
                         </Box>
                     </Stack>
                 </Grid>
                 <Grid item xs={4} sm={2}  >
                     <Stack alignItems="center">
-                        <Box onClick={() => toggle(14)} sx={{ width: { xs: "120px", }, height: '163px' }}>
+                        <Box onClick={() => toggle(16)} sx={{ width: { xs: "120px", }, height: '163px' }}>
                             <img src='/image/shop/6.svg' />
                         </Box>
                     </Stack>
@@ -363,6 +363,18 @@ function shopmain() {
                 {itembuy == 1 ? <Grid item xs={12}><Explain toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
                 {itembuy == 2 ? <Grid item xs={12}><Explain2 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
                 {itembuy == 3 ? <Grid item xs={12}><Explain3 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 4 ? <Grid item xs={12}><Explain toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 5 ? <Grid item xs={12}><Explain2 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 6 ? <Grid item xs={12}><Explain3 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 7 ? <Grid item xs={12}><Explain toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 8 ? <Grid item xs={12}><Explain2 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 9 ? <Grid item xs={12}><Explain3 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 10 ? <Grid item xs={12}><Explain toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 11 ? <Grid item xs={12}><Explain2 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 12 ? <Grid item xs={12}><Explain3 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 15 ? <Grid item xs={12}><Explain toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 16 ? <Grid item xs={12}><Explain2 toggle={toggle} count={count} setcount={setcount} /></Grid> : ""}
+                {itembuy == 13 ? <Comflrm toggle={toggle} count={count} /> : ""}
 
             </Grid>
         </Box>
