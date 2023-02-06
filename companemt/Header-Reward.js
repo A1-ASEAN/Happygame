@@ -24,19 +24,20 @@ const theme = createTheme({
 const Header_Reward = () => {
   return (
     <Stack alignItems={"center"}>
-    <Box maxWidth={"100%"}height={"160px"}>
+    <Box maxWidth={"100%"}height={"160px"} >
       <ThemeProvider theme={theme}>
         <Box
           sx={{
             position: "fixed",
-            zIndex: "modal",
+            zIndex: "app bar",
             height: "51px",
             width: "100%",
+             
           }}
         >
           <img src="/image/reward/bg.svg" />
         </Box>
-        <Box sx={{ position: "relative", zIndex: "tooltip" ,pr:3}}>
+        <Box sx={{ position: "relative", zIndex: "drawer" ,pr:3}}>
           <Stack
             direction="row"
             justifyContent="flex-end"
@@ -82,7 +83,7 @@ const Header_Reward = () => {
               >
                 <Typography
                   className={myFont.className}
-                  sx={{ fontSize: "25px",pr:4 }}
+                  sx={{ fontSize: "23.5px",pr:4 }}
                 >
                   CHRISTOPHER NOLAN
                 </Typography>
@@ -99,10 +100,10 @@ const Header_Reward = () => {
                         className={myFont.className}
                         sx={{ fontSize: "50px", height: "50px" }}
                       >
-                        99999 
+                        99,999 
                       </Typography>
                     </Box>
-                    <Box sx={{ pl: 11 }}>
+                    <Box sx={{ pl: 12 }}>
                       <img src="/image/taket.svg" />
                     </Box>
                   </Stack>
@@ -110,7 +111,7 @@ const Header_Reward = () => {
               </Stack>
             </Grid>
           </Grid>
-          <Box zIndex={"tooltip"}>
+          <Box zIndex={"drawer"}>
           <img src="/image/Reward_page/redflag.svg" />
         </Box>
         </Box>

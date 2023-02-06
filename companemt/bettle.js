@@ -20,7 +20,16 @@ const theme = createTheme({
             // This is green.A700 as hex.
             main: '#FFC05F',
         },
-    },
+    }, breakpoints: {
+        values: {
+          mobile: 0,
+          iPadMini: 414,
+          iPadAir: 600,
+          iPadPro: 1023,
+          desktop: 1200,
+        },
+      }
+    
 });
 
 
@@ -38,11 +47,11 @@ const Top = () => {
             <Stack alignItems="center" justifyContent="center">
 
                 <Box sx={{
-                    height: '100%', width: "260px", position: 'relative',
+                    height: '100%', width: "100%", position: 'relative',
                     zIndex: 'drawer', pt: 5.7,
                 }}>
                     <Stack direction="row"
-                        justifyContent="space-between"
+                        justifyContent="space-evenly"
                         alignItems="center">
                         <Link href={"/Home"}>
                             <Typography className={myFont.className} variant='h4' onClick={() => toggle(1)} color={"primary"} >BETTLE</Typography>

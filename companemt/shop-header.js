@@ -28,7 +28,7 @@ const theme = createTheme({
 const Top = () => {
     return (
 
-        <Box maxWidth="100%">
+        <Box width="100%">
             <Box sx={{ height: "75px", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'drawer', height: "67px" }}>
@@ -37,7 +37,7 @@ const Top = () => {
                     <Box sx={{ position: 'absolute', zIndex: 'tooltip', mt: 2, height: '20px' }}>
                         <  img src='/image/flower-bg.svg' />
                     </Box >
-                    <Box maxWidth="390px" sx={{ position: 'absolute ', zIndex: 'modal', }}>
+                    <Box width="100%" sx={{ position: 'absolute ', zIndex: 'modal', }}>
                         <ThemeProvider theme={theme}>
                             <Stack direction="row"
                                 justifyContent="space-between"
@@ -49,7 +49,7 @@ const Top = () => {
                                 </Stack>
                                 <Stack direction="row" alignItems="center" sx={{ pr: 1 }}>
 
-                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
+                                    <Typography className={myFont.className} sx={{ pr: 0, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
                                     <img src="/image/book.svg" />
                                 </Stack>
                             </Stack>

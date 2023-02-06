@@ -36,12 +36,12 @@ const Top = () => {
         <ThemeProvider theme={theme}>
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
-                    height: '100%', width: "350px",
+                    height: '100%', width: "100vw",
 
                     zIndex: 'tooltip',
                 }}>
                     <Stack direction="row"
-                        justifyContent="space-between"
+                        justifyContent="space-evenly"
                         alignItems="center">
 
                         <Box onClick={() => toggle(1)}>

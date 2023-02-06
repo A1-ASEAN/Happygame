@@ -17,6 +17,10 @@ const theme = createTheme({
             // This is green.A700 as hex.
             main: '#FFC05F',
         },
+        three: {
+            // This is green.A700 as hex.
+            main: '#0ACD7A',
+        },
     },
     breakpoints: {
         values: {
@@ -50,7 +54,7 @@ function buy({toggle,count,setcount}) {
             </Box>
             <Box position={"absolute"} sx={{ top: "30%" , right: "20%", zIndex: "tooltip", }} >
                 <ThemeProvider theme={theme}>
-                    <Typography sx={{ pr: {iPadini:5,iPadAir:16,iPadPro:24}, height: '30px', fontSize:50}} className={myFont.className} color={"primary"}>
+                    <Typography sx={{ pr: {iPadini:5,iPadAir:16,iPadPro:24,desktop:59}, height: '30px', fontSize:50}} className={myFont.className} color={"primary"}>
                         DO TOU WANT
                     </Typography >
                     <Typography sx={{ pl: 6, height: '30px', fontSize: 50 }} className={myFont.className} color={"primary"}>
@@ -62,11 +66,11 @@ function buy({toggle,count,setcount}) {
                     <Typography sx={{ pl: 6, height: '100px', fontSize: 50 }} className={myFont.className} color={"primary"}>
                         POTION?
                     </Typography>
-                </ThemeProvider>
+                
                 <Box sx={{ pl: 2 }}>
                     <Link href='/item'>
-                        <Button variant="contained" sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
-                            <Typography className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
+                        <Button color="three" variant="contained" sx={{ height: '54px', width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)" }} >
+                            <Typography color={"primary"} className={myFont.className} sx={{ fontSize: 30, height: '40px', mb: 1 }} >
                                 COMFIRM
                             </Typography>
                         </Button>
@@ -81,7 +85,7 @@ function buy({toggle,count,setcount}) {
                         </Button>
                     
                 </Box>
-
+                </ThemeProvider>
             </Box>
         </Box>
 

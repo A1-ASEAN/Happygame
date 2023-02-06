@@ -13,7 +13,7 @@ const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 function missionmain() {
     return (
         <Stack justifyContent="flex-start" alignItems="center" sx={{ mt: 2 }}>
-            <Box sx={{ width: '381px', height: '592px', ml: 3 }}>
+            <Box sx={{ width: '100vw', height: '592px', ml: 3 }}>
                 <Stack direction="column"
                     justifyContent="center"
                     alignItems="stretch"

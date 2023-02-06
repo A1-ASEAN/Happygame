@@ -9,14 +9,14 @@ const Reward = () => {
         
       <Box height={'100vh'} overflow={"hidden"}  maxWidth={"100%"} sx={{bgcolor:"#f1f1f1f1 "}}>
         <Box  height={"100%"} display={"flex"} flexDirection={"column"}>
-        <Box  zIndex={"tooltip"}>
+        <Box  zIndex={"modal"}>
           <Header/>
         </Box>
-        <Box zIndex={"modal"} flex={1} overflow={"hidden"} sx={{overflowY:"auto"}}>
+        <Box zIndex={"tooltip"} flex={1} overflow={"hidden"} sx={{overflowY:"auto"}}>
           <Body/>
         </Box>
 
-        <Box >
+        <Box  zIndex={"modal"}>
             <Footer/>
 
         </Box>

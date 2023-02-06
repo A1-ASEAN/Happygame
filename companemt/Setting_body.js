@@ -6,6 +6,7 @@ import { Stack, Switch, Typography, SwitchProps, Button } from "@mui/material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import localFont from "@next/font/local";
 
+
 const myFont = localFont({ src: "../gamer_2/Gamer.ttf" });
 
 const theme = createTheme({
@@ -25,6 +26,15 @@ const theme = createTheme({
         main:"#0968FF",
     },
   },
+  breakpoints: {
+    values: {
+      mobile: 0,
+      iPadMini: 414,
+      iPadAir: 600,
+      iPadPro: 1023,
+      desktop: 1200,
+    },
+  }
 });
 
 const AntSwitch = styled(Switch)(({ theme }) => ({
@@ -76,7 +86,7 @@ const Setting_body = () => {
     <div>
         <ThemeProvider theme={theme}>
       <Stack alignItems="center" justifyContent="center">
-        <Box width={"380px"} 
+        <Box width={"100vw"} 
             sx={{ bgcolor: "#FFFF", pt: 1 }}>
           
             <Box
@@ -94,7 +104,7 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1} >
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}}  variant="body1" paddingTop={1} >
                   Notification
                 </Typography>
 
@@ -123,7 +133,7 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1} >
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1} >
                 Profile picture
                 </Typography>
 
@@ -149,12 +159,12 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1"  paddingTop={1}>
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1"  paddingTop={1}>
                 E-mail
                 </Typography>
 
                 <Stack direction="row" spacing={1} alignItems="center">
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1}>
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1}>
                 Christopher@jenosize.com
                 </Typography>
                 </Stack>
@@ -177,7 +187,7 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1}>
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1}>
                 Change password
                 </Typography>
 
@@ -203,7 +213,7 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1}>
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1}>
                 Team deverloper
                 </Typography>
 
@@ -229,12 +239,12 @@ const Setting_body = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Typography fontSize={"12px"} variant="body1" paddingTop={1}>
+                <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1}>
                 Version
                 </Typography>
 
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <Typography fontSize={"12px"} variant="body1" paddingTop={1}>
+                  <Typography fontSize={ {mobile:12,iPadMini:13,iPadAir:14,iPadPro:15,desktop:16}} variant="body1" paddingTop={1}>
                 1.0.0
                 </Typography>
                 </Stack>
