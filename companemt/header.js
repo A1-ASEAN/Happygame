@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import BG from "../companemt/SVGS/PF_BG"
 import Bettle from './bettle'
 import { Button, Link } from '@mui/material';
 
@@ -41,50 +40,14 @@ const Top = () => {
                     
 
                 }}>
-                
                     <Box sx={{
                         position: 'absolute',
                         zIndex: 'tooltip',
                         height: "340px",
-                        right:"80%",
-                        width:"735px"
+                       
+                      
                     }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-                    </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        right:"50%",
-                        width:"735px"
-
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-
-                    </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        left:"40%",
-                        width:"735px"
-
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-                        
-                    </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        left:"60%",
-                        width:"735px"
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
+                       <img src="/image/bar_bg.png" />
                     </Box>
                 
 

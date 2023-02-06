@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import BG from "../companemt/SVGS/PF_BG"
 import Bettle from './bettle'
-import { Button } from '@mui/material';
 
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
@@ -47,46 +46,12 @@ const Top = () => {
                         position: 'absolute',
                         zIndex: 'tooltip',
                         height: "340px",
-                        right:"80%",
-                        width:"735px"
+                        
                     }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-                    </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        right:"50%",
-                        width:"735px"
-
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-
-                    </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        left:"40%",
-                        width:"735px"
-
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
+                        <img src='/image/bar_bg.png' /> 
                         
                     </Box>
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'tooltip',
-                        height: "340px",
-                        left:"60%",
-                        width:"735px"
-                    }}>
-                        {/* <img src='/image/bg.svg' /> */} 
-                        <BG />
-                    </Box>
+                    
                 </Stack>
 
                 <Box maxWidth="100%" sx={{

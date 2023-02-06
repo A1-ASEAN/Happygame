@@ -54,7 +54,7 @@ function healing({toggle}) {
                             </Button >
                             <Button className={myFont.className} variant="contained" color="error" 
                             sx={{ fontSize: '26px', height: '30px', width: '82px' }}
-                            onClick={() => toggle(10)}>
+                            onClick={() => toggle("Delete")}>
 
                                 DELETE
 
