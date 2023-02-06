@@ -48,12 +48,12 @@ const Top = ({secpage}) => {
         <ThemeProvider theme={theme}>
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
-                    height: '50px', width: "350px",
+                    height: '50px', width: "100vw",
                     mt: 3.8,
                     zIndex: 'tooltip',
                 }}>
                     <Stack direction="row"
-                        justifyContent="space-between"
+                        justifyContent="space-evenly"
                         alignItems="center">
 
                         <Box onClick={() => toggle(1)} sx={{cursor: "pointer"}}>

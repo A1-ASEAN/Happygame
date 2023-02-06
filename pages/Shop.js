@@ -48,7 +48,7 @@ export default function Home() {
           <Box>
             <Header />
             {/* wall */}
-            <Stack justifyContent="center" alignItems="center">
+            <Stack justifyContent="space-evenly" alignItems="center">
               <Box overflow={"hidden"}
                 sx={{
                   maxWidth: "100%",
