@@ -9,6 +9,6 @@
   <path id="Path_506" data-name="Path 506" d="M265.364,3.712c0-.066.006-.132.006-.2A3.514,3.514,0,0,0,261.856,0,5.856,5.856,0,0,0,256,5.856l4.685,4.685H264.2a3.514,3.514,0,0,0,1.165-6.829Z" transform="translate(-236.011)" fill="#0942dc"/>
   <path id="Path_507" data-name="Path 507" d="M219.394,75l-3.1,2.342,3.1,2.342h4.685A4.685,4.685,0,0,0,219.394,75Z" transform="translate(-199.405 -69.144)" fill="#0942b2"/>
   <path id="Path_508" data-name="Path 508" d="M196,79.685h4.685V75A4.685,4.685,0,0,0,196,79.685Z" transform="translate(-180.696 -69.144)" fill="#0942dc"/>
-  <text id="Redeem" transform="translate(19.989 59.989)" fill="#0968ff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-17.939" y="0">Redeem</tspan></text>
+  <text id="Redeem" transform="translate(19.989 59.989)" fill="#0968ff" font-size="9" font-family="SegoeUI, Segoe UI"><tspan x="-17.939" y="0">Redeem</tspan></text>
 </svg>
   

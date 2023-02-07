@@ -72,7 +72,7 @@ const Setting_header = () => {
                           sx={{ pr: 1, fontSize: 30 }}
                           color={"secondary"}
                         >
-                          HEPL
+                          HELP
                         </Typography>
                         <img src="/image/book.svg" />
                       </Stack>

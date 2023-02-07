@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="56" viewBox="0 0 36 56">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="56" viewBox="0 0 36 56">
   <g id="Group_202" data-name="Group 202" transform="translate(-1475 -1071.047)">
     <g id="Group_183" data-name="Group 183" transform="translate(1485.286 1071.047)">
       <rect id="Rectangle_9485" data-name="Rectangle 9485" width="25.714" height="5.143" transform="translate(0 20.571)" fill="#f0f0f0"/>
@@ -13,6 +13,6 @@
       <rect id="Rectangle_9492" data-name="Rectangle 9492" width="5.143" height="5.143" transform="translate(0 10.441)" fill="#b4b4b4"/>
       <rect id="Rectangle_9493" data-name="Rectangle 9493" width="5.143" height="5.143" fill="#b4b4b4"/>
     </g>
-    <text id="Mission" transform="translate(1493 1124.047)" fill="#8b8b8b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-16.914" y="0">Mission</tspan></text>
+    <text id="Mission" transform="translate(1493 1124.047)" fill="#8b8b8b" font-size="9" font-family="SegoeUI, Segoe UI"><tspan x="-20" y="0">Mission</tspan></text>
   </g>
 </svg>

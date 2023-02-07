@@ -10,6 +10,6 @@
     <path id="Path_551" data-name="Path 551" d="M889.415,958.77c0-.066.006-.132.006-.2a3.514,3.514,0,0,0-3.514-3.514,5.856,5.856,0,0,0-5.856,5.856l4.685,4.685h3.514a3.514,3.514,0,0,0,1.165-6.829Z" transform="translate(-236.011)" fill="#969696"/>
     <path id="Path_552" data-name="Path 552" d="M843.445,1030.058l-3.1,2.343,3.1,2.342h4.685A4.685,4.685,0,0,0,843.445,1030.058Z" transform="translate(-199.405 -69.144)" fill="#b4b4b4"/>
     <path id="Path_553" data-name="Path 553" d="M820.051,1034.743h4.685v-4.685A4.685,4.685,0,0,0,820.051,1034.743Z" transform="translate(-180.696 -69.144)" fill="#969696"/>
-    <text id="Redeem" transform="translate(644.051 1015.047)" fill="#8b8b8b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-17.939" y="0">Redeem</tspan></text>
+    <text id="Redeem" transform="translate(644.051 1015.047)" fill="#8b8b8b" font-size="9" font-family="SegoeUI, Segoe UI"><tspan x="-17.939" y="0">Redeem</tspan></text>
   </g>
 </svg>

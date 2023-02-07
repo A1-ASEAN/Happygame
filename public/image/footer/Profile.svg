@@ -6,6 +6,6 @@
     <path id="Path_574" data-name="Path 574" d="M3405.38,1029.991a8.2,8.2,0,0,0,8.2,8.2v-16.4A8.2,8.2,0,0,0,3405.38,1029.991Z" transform="translate(-134.785 -53.558)" fill="#c8c8c8"/>
     <path id="Path_575" data-name="Path 575" d="M3466.916,1257.527a8.206,8.206,0,0,0-6.141-2.767h-7.027l-4.685,5.934,4.685,5.934a15.346,15.346,0,0,0,13.309-7.746l.414-.728Z" transform="translate(-174.954 -267.786)" fill="#b4b4b4"/>
     <path id="Path_576" data-name="Path 576" d="M3343.39,1254.76a8.206,8.206,0,0,0-6.141,2.767l-.555.628.414.728a15.346,15.346,0,0,0,13.309,7.746V1254.76Z" transform="translate(-71.625 -267.786)" fill="#c8c8c8"/>
-    <text id="Profile" transform="translate(3278.793 1023.549)" fill="#8b8b8b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-14.07" y="0">Profile</tspan></text>
+    <text id="Profile" transform="translate(3278.793 1023.549)" fill="#8b8b8b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-21" y="0">Profile</tspan></text>
   </g>
 </svg>
