@@ -49,11 +49,11 @@ function buy({toggle,count,setcount}) {
 
 
         <Box  >
-            <Box bgcolor={"#000"} sx={{ opacity: 0.8, width: "100%", height: "100%", position: 'absolute', zIndex: "tooltip", top: 0, left: 0, right: 0 }}>
+            <Box bgcolor={"#000"} sx={{ opacity: 0.8, width: "100%", height: "100%", position: 'fixed', zIndex: "tooltip", top: 0, left: 0, right: 0 }}>
 
-            </Box>
-            <Box position={"absolute"} sx={{ top: "30%" , right: "20%", zIndex: "tooltip", }} >
-                <ThemeProvider theme={theme}>
+            </Box><ThemeProvider theme={theme}>
+            <Box position={"absolute"} sx={{ top: {mobile:"0%",iPadMini:"30%"} , right: "20%", zIndex: "tooltip", }} >
+                
                     <Typography sx={{ pr: {iPadini:5,iPadAir:16,iPadPro:24,desktop:59}, height: '30px', fontSize:50}} className={myFont.className} color={"primary"}>
                         DO TOU WANT
                     </Typography >
@@ -85,8 +85,8 @@ function buy({toggle,count,setcount}) {
                         </Button>
                     
                 </Box>
-                </ThemeProvider>
-            </Box>
+                
+            </Box></ThemeProvider>
         </Box>
 
 
