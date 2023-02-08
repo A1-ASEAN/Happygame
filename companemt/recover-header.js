@@ -28,13 +28,13 @@ const theme = createTheme({
 const Top = () => {
     return (
 
-        <Box maxWidth="100%" >
+        <Box  >
             <Box sx={{ height: "79px", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'drawer', height: "67px" }}>
                         <img src='/image/2bg.svg' />
                     </Box>
-                    <Box maxWidth="390px" sx={{ position: 'absolute ', zIndex: 'modal', }}>
+                    <Box width={"100%"} sx={{ position: 'absolute ', zIndex: 'modal', }}>
                         <ThemeProvider theme={theme}>
                             <Stack direction="row"
                                 justifyContent="space-between"

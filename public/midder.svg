@@ -1,0 +1,74 @@
+<svg id="Group_7544" data-name="Group 7544" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.293" height="90.733" viewBox="0 0 85.293 90.733">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e49709"/>
+      <stop offset="0.186" stop-color="#fed102"/>
+      <stop offset="0.338" stop-color="#da8100"/>
+      <stop offset="0.557" stop-color="#fcd201"/>
+      <stop offset="0.776" stop-color="#d77d02"/>
+      <stop offset="1" stop-color="#ffcc04"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.577" y1="1.077" x2="0.423" y2="1.077" gradientUnits="objectBoundingBox">
+      <stop offset="0.003" stop-color="#ffec26"/>
+      <stop offset="0.015" stop-color="#fde724"/>
+      <stop offset="0.125" stop-color="#f5c014"/>
+      <stop offset="0.213" stop-color="#efa80b"/>
+      <stop offset="0.268" stop-color="#eea008"/>
+      <stop offset="0.327" stop-color="#f1a807"/>
+      <stop offset="0.545" stop-color="#fbc204"/>
+      <stop offset="0.676" stop-color="#ffcc04"/>
+      <stop offset="1" stop-color="#d78201"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Group_7539" data-name="Group 7539" transform="translate(0 2.066)" opacity="0.35" style="mix-blend-mode: multiply;isolation: isolate">
+    <circle id="Ellipse_688" data-name="Ellipse 688" cx="32.604" cy="32.604" r="32.604" transform="translate(10.043 16.394)" fill="#ecc78f" opacity="0"/>
+    <circle id="Ellipse_689" data-name="Ellipse 689" cx="32.525" cy="32.525" r="32.525" transform="translate(5.497 75.525) rotate(-81.132)" fill="#ddbb86" opacity="0.063"/>
+    <circle id="Ellipse_690" data-name="Ellipse 690" cx="32.446" cy="32.446" r="32.446" transform="translate(5.247 74.391) rotate(-80.405)" fill="#cfae7d" opacity="0.125"/>
+    <circle id="Ellipse_691" data-name="Ellipse 691" cx="32.367" cy="32.367" r="32.367" transform="translate(10.28 14.845)" fill="#c0a274" opacity="0.188"/>
+    <circle id="Ellipse_692" data-name="Ellipse 692" cx="32.288" cy="32.288" r="32.288" transform="translate(10.359 14.328)" fill="#b1956b" opacity="0.25"/>
+    <circle id="Ellipse_693" data-name="Ellipse 693" cx="32.209" cy="32.209" r="32.209" transform="matrix(0.91, -0.414, 0.414, 0.91, 0, 30.017)" fill="#a28962" opacity="0.313"/>
+    <circle id="Ellipse_694" data-name="Ellipse 694" cx="32.13" cy="32.13" r="32.13" transform="translate(10.517 13.296)" fill="#947c59" opacity="0.375"/>
+    <circle id="Ellipse_695" data-name="Ellipse 695" cx="32.051" cy="32.051" r="32.051" transform="matrix(0.935, -0.355, 0.355, 0.935, 1.303, 26.25)" fill="#857050" opacity="0.438"/>
+    <circle id="Ellipse_696" data-name="Ellipse 696" cx="31.972" cy="31.972" r="31.972" transform="translate(10.674 12.263)" fill="#766448" opacity="0.5"/>
+    <circle id="Ellipse_697" data-name="Ellipse 697" cx="31.893" cy="31.893" r="31.893" transform="translate(6.217 70.234) rotate(-81.131)" fill="#67573f" opacity="0.563"/>
+    <circle id="Ellipse_698" data-name="Ellipse 698" cx="31.814" cy="31.814" r="31.814" transform="translate(6.147 69.351) rotate(-80.783)" fill="#594b36" opacity="0.625"/>
+    <circle id="Ellipse_699" data-name="Ellipse 699" cx="31.735" cy="31.735" r="31.735" transform="translate(10.911 10.713)" fill="#4a3e2d" opacity="0.688"/>
+    <circle id="Ellipse_700" data-name="Ellipse 700" cx="31.656" cy="31.656" r="31.656" transform="translate(6.488 68.25) rotate(-81.13)" fill="#3b3224" opacity="0.75"/>
+    <circle id="Ellipse_701" data-name="Ellipse 701" cx="31.577" cy="31.577" r="31.577" transform="translate(1.389 24.168) rotate(-22.5)" fill="#2c251b" opacity="0.813"/>
+    <circle id="Ellipse_702" data-name="Ellipse 702" cx="31.498" cy="31.498" r="31.498" transform="translate(11.148 9.164)" fill="#1e1912" opacity="0.875"/>
+    <circle id="Ellipse_703" data-name="Ellipse 703" cx="31.419" cy="31.419" r="31.419" transform="translate(11.227 8.648)" fill="#0f0c09" opacity="0.938"/>
+    <circle id="Ellipse_704" data-name="Ellipse 704" cx="31.34" cy="31.34" r="31.34" transform="translate(11.306 8.131)"/>
+  </g>
+  <g id="Group_7543" data-name="Group 7543" transform="translate(0.975 0)">
+    <circle id="Ellipse_705" data-name="Ellipse 705" cx="31.474" cy="31.474" r="31.474" transform="translate(0 26.026) rotate(-24.421)" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_706" data-name="Ellipse 706" cx="25.707" cy="25.707" r="25.707" transform="translate(15.965 15.965)" fill="url(#linear-gradient-2)"/>
+    <g id="Group_7540" data-name="Group 7540" transform="translate(15.965 15.964)" opacity="0.5">
+      <path id="Path_36050" data-name="Path 36050" d="M205.634,157.311a25.157,25.157,0,1,1-17.79,7.369,24.993,24.993,0,0,1,17.79-7.369Zm0-.549a25.707,25.707,0,1,0,25.707,25.707,25.707,25.707,0,0,0-25.707-25.707Z" transform="translate(-179.927 -156.762)" fill="#fff"/>
+    </g>
+    <g id="Group_7541" data-name="Group 7541" transform="translate(21.348 21.348)" opacity="0.35" style="mix-blend-mode: multiply;isolation: isolate">
+      <circle id="Ellipse_707" data-name="Ellipse 707" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 39.824) rotate(-80.447)" fill="#ecc78f" opacity="0"/>
+      <circle id="Ellipse_708" data-name="Ellipse 708" cx="15.371" cy="15.371" r="15.371" transform="translate(0 19.073) rotate(-24.216)" fill="#ddbb86" opacity="0.063"/>
+      <circle id="Ellipse_709" data-name="Ellipse 709" cx="15.371" cy="15.371" r="15.371" transform="matrix(0.912, -0.41, 0.41, 0.912, 0, 18.642)" fill="#cfae7d" opacity="0.125"/>
+      <circle id="Ellipse_710" data-name="Ellipse 710" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 38.532) rotate(-80.447)" fill="#c0a274" opacity="0.188"/>
+      <circle id="Ellipse_711" data-name="Ellipse 711" cx="15.371" cy="15.371" r="15.371" transform="matrix(0.912, -0.41, 0.41, 0.912, 0, 17.78)" fill="#b1956b" opacity="0.25"/>
+      <circle id="Ellipse_712" data-name="Ellipse 712" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 37.67) rotate(-80.447)" fill="#a28962" opacity="0.313"/>
+      <circle id="Ellipse_713" data-name="Ellipse 713" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 37.239) rotate(-80.447)" fill="#947c59" opacity="0.375"/>
+      <circle id="Ellipse_714" data-name="Ellipse 714" cx="15.371" cy="15.371" r="15.371" transform="matrix(0.912, -0.41, 0.41, 0.912, 0, 16.488)" fill="#857050" opacity="0.438"/>
+      <circle id="Ellipse_715" data-name="Ellipse 715" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 36.378) rotate(-80.447)" fill="#766448" opacity="0.5"/>
+      <circle id="Ellipse_716" data-name="Ellipse 716" cx="15.371" cy="15.371" r="15.371" transform="translate(4.952 7.968)" fill="#67573f" opacity="0.563"/>
+      <circle id="Ellipse_717" data-name="Ellipse 717" cx="15.371" cy="15.371" r="15.371" transform="translate(0 15.195) rotate(-24.216)" fill="#594b36" opacity="0.625"/>
+      <circle id="Ellipse_718" data-name="Ellipse 718" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 35.085) rotate(-80.447)" fill="#4a3e2d" opacity="0.688"/>
+      <circle id="Ellipse_719" data-name="Ellipse 719" cx="15.371" cy="15.371" r="15.371" transform="translate(4.952 6.676)" fill="#3b3224" opacity="0.75"/>
+      <circle id="Ellipse_720" data-name="Ellipse 720" cx="15.371" cy="15.371" r="15.371" transform="matrix(0.912, -0.41, 0.41, 0.912, 0, 13.903)" fill="#2c251b" opacity="0.813"/>
+      <circle id="Ellipse_721" data-name="Ellipse 721" cx="15.371" cy="15.371" r="15.371" transform="translate(2.615 33.792) rotate(-80.447)" fill="#1e1912" opacity="0.875"/>
+      <circle id="Ellipse_722" data-name="Ellipse 722" cx="15.371" cy="15.371" r="15.371" transform="translate(4.952 5.383)" fill="#0f0c09" opacity="0.938"/>
+      <circle id="Ellipse_723" data-name="Ellipse 723" cx="15.371" cy="15.371" r="15.371" transform="matrix(0.912, -0.41, 0.41, 0.912, 0, 12.61)"/>
+    </g>
+    <g id="Group_7542" data-name="Group 7542" transform="translate(25.214 25.339)">
+      <image id="Rectangle_53443" data-name="Rectangle 53443" width="33" height="31.731" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAYAAAAv3j5gAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGqADAAQAAAABAAAAGQAAAAAooe7gAAAEjElEQVRIDY2Wu29cRRTGz8y9+/QuyNiJIyAWBESoQAiJIpR0tEih5D+gQEqHgogE/AWIkpaKEgmJEgokKAgNEEBIJhJ2EuPXel/33uH7zexd7zrYyrHGc2fuzPnO+c7jrgsh2KNIcduF4thsqhFKs2psVmqsvRXco9x35wHtfeVD63GzvGvmsmCLQICM7gtwajb+V/PE7Pn3zwb1Z1mz84UP5Sh5UGgOlTPfmJ2ukmJW473kWdDe7x+7M+nJTwPd+cgH3zRrPWbWuaC3UuBljhNBlZ4RlOJJfC60lvpcdxp9s38+dwEG1t9e9m7Jo19u+lDpIsJcig684RnlfmaW09xY0SEBEC8Mwbi8ZdZ+Io3Rt37JuyWP4htdhH+kVjw+SHFKuwLW+6O7ZhPRhgEuM+teNMsAa5s1+84ygS7KHOi3W1lw4ofkgBYsRfAIRYDnnbTHf87gMZ40RRmKe0+6eMbrfKWYhp98cC/rQTIHgorpQAdK7QMmILIMKwGNwAuJXAxT3LqKY3dD8VxLXgBSTn30tCi81Y7FGG19mgUONBREZp87QyfKsXqyb3a4xTohYQT0QRvedC+6+d1y4mNMpwMnQ50dft2MEYkekVGOzNKAY8Zoz8ULxSDVT1P1tPVNsAuvmvU3nXXWzYbbwVY2RJfMxgsUe+kd7wGWjKrjHYF6l1y0vJyECEbw21JcxhR2Nj4Ili0kUeOVyv35oQ94eOVNb1PRONnXLC9IdWouxlke87wUI7zJGjOeBQ/o5CieUdtx1ntK7eb67Ja2r35Qub8/y8Lxdmak++h+jEKMLfSfFhd+yJfy/fSBxXUxDrZ9W94pQTJ1Cd+UYZqPdpoq6JkaPFKE5dv8alyX36uJLYpWB6qRReldSqv82oz42cvixywMdzI71si7qSyqqZJAJYEBJEs9cv9a4fa+zEOzJ55nVFGoqb8p4LvBjtU8x4dmz15bhDfb/6Oy1avBWquVqFacx2mMHni1I+1pXWl/450h7ApV6TrcTfP4MEQr2CcZAMcqgnvnEx/WX6Jwg+3+rLoTOLHLO1WMb+g4Gyhm/ctlKmhRTGkgEWhw74Q9amSktk+KR6/0KpTBGvK4KwpXVJxkJek+lpKju3qnYu/EFhRi2qOYVEc4h0SgumnGbiB+kfiBg2P9Efz+psZlEuDEKFrS7q/af1oxaQcZ56zZE2UKJZ0cA6eDlI3x/+a7pcPKusfFyq+oKVkrZRTnaeFTEHufcIcPxIIGAtVkYNao4qdl5Q0FSZLgeJJQeIBQdbzNRUlT3yVobK3qsDJpIWu1kFLVDD2ReEJjMWTomNjI2/o3kznQCzdV5rGsZaJ26zbfljcdxYWsBAgFCH2RuNG9kYO/UkLx+ajB6s7N+zkQixdvVQ4L8aBu/3hQg/K7oe5dnK+FszAxFW3ISBncev2ki7C3BMQGrQUwLAYgUqc5FQInktQGkSg8QzVGEK+168ufcW48BMTmczcq115LQLU3KDxP6JXIM+89DML+uT+3ODD8zodMmUe3CMrE+pcRMz+3iNnwntmVG/8PgA7kPxk+IO43dvXQAAAAAElFTkSuQmCC"/>
+      <image id="Rectangle_53444" data-name="Rectangle 53444" width="11" height="11" transform="translate(11 11)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAACKADAAQAAAABAAAACAAAAAC2TFloAAAAxUlEQVQYGU2PvWoCQRSFvxkGUREjWChbW/ooVnmevEHqPE7KdJIgWIhg4Q+iEiFsNj+7unvcu9t4YeZ+M+ecy4yThNXfm9c1FckGfnYwepKze2/b6tnre2sESSlSSvmHr5Ju++KVHEV/DM2+yM7QiQJFDlnscZqGyhnvRTdynJY5ujS4/FbDCV/r+g023rg9EOlnSpE1aQ8LfO/x6k5zcZiJzqhMl8bzAhrdfx4mqQuWtJ+EllFd91yJZrCVvaP41bA+W78B+VVkeoz1zY0AAAAASUVORK5CYII="/>
+      <circle id="Ellipse_724" data-name="Ellipse 724" cx="1.132" cy="1.132" r="1.132" transform="translate(15.325 15.2)" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>

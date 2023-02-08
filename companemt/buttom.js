@@ -62,7 +62,7 @@ export default function Butoom() {
                             width: '20px',pt:2
                             
                         }}>
-                            <Link href="#" underline="none">
+                            <Link href="/luckydraw" underline="none">
                                 <Stack sx={{ pl: 7 }}>
                                     <Box>
                                         <img src=' /image/buttom/lucky.svg' />

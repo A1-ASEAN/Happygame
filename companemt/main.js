@@ -111,8 +111,8 @@ export default function AccessibleTable() {
                   </TableCell>
                   <TableCell align="right">
                     <Stack direction="row"
-  justifyContent="flex-end"
-  alignItems="center">
+                      justifyContent="flex-end"
+                      alignItems="center">
                       <Box
                         className={myFont.className}
                         sx={{
@@ -204,27 +204,27 @@ export default function AccessibleTable() {
                   </TableCell>
                   <TableCell align="right">
                     <Stack direction="row"
-  justifyContent="flex-end"
-  alignItems="center">
-                    <Box
-                      className={myFont.className}
-                      sx={{
-                        backgroundColor: "#FFE000",
-                        fontSize: 20,
-                        borderRadius: "5px",
-                        width: "100px ",
-                      }}
-                    >
-                      <Stack justifyContent="center" alignItems="center">
-                        <Typography
-                          sx={{ fontSize: 20 }}
-                          className={myFont.className}
-                          color={"primary"}
-                        >
-                          1 DRAW
-                        </Typography>
-                      </Stack>
-                    </Box></Stack>
+                      justifyContent="flex-end"
+                      alignItems="center">
+                      <Box
+                        className={myFont.className}
+                        sx={{
+                          backgroundColor: "#FFE000",
+                          fontSize: 20,
+                          borderRadius: "5px",
+                          width: "100px ",
+                        }}
+                      >
+                        <Stack justifyContent="center" alignItems="center">
+                          <Typography
+                            sx={{ fontSize: 20 }}
+                            className={myFont.className}
+                            color={"primary"}
+                          >
+                            1 DRAW
+                          </Typography>
+                        </Stack>
+                      </Box></Stack>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -295,26 +295,26 @@ export default function AccessibleTable() {
                   </TableCell>
                   <TableCell align="right">
                     <Stack direction="row"
-  justifyContent="flex-end"
-  alignItems="center">
-                    <Box
-                      alignItems
-                      sx={{
-                        backgroundColor: "#FD7066",
-                        borderRadius: "5px",
-                        width: "100px ",
-                      }}
-                    >
-                      <Stack justifyContent="center" alignItems="center">
-                        <Typography
-                          sx={{ fontSize: 20 }}
-                          className={myFont.className}
-                          color={"primary"}
-                        >
-                          -2 POINTS
-                        </Typography>
-                      </Stack>
-                    </Box></Stack>
+                      justifyContent="flex-end"
+                      alignItems="center">
+                      <Box
+                        alignItems
+                        sx={{
+                          backgroundColor: "#FD7066",
+                          borderRadius: "5px",
+                          width: "100px ",
+                        }}
+                      >
+                        <Stack justifyContent="center" alignItems="center">
+                          <Typography
+                            sx={{ fontSize: 20 }}
+                            className={myFont.className}
+                            color={"primary"}
+                          >
+                            -2 POINTS
+                          </Typography>
+                        </Stack>
+                      </Box></Stack>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -385,28 +385,28 @@ export default function AccessibleTable() {
                   </TableCell>
                   <TableCell align="right">
                     <Stack direction="row"
-  justifyContent="flex-end"
-  alignItems="center">
-                    <Box
-                      className={myFont.className}
-                      alignItems
-                      sx={{
-                        backgroundColor: "#0ACD7A",
-                        fontSize: 20,
-                        borderRadius: "5px",
-                        width: "100px ",
-                      }}
-                    >
-                      <Stack justifyContent="center" alignItems="center">
-                        <Typography
-                          sx={{ fontSize: 20 }}
-                          className={myFont.className}
-                          color={"primary"}
-                        >
-                          RECOVER
-                        </Typography>
-                      </Stack>
-                    </Box></Stack>
+                      justifyContent="flex-end"
+                      alignItems="center">
+                      <Box
+                        className={myFont.className}
+                        alignItems
+                        sx={{
+                          backgroundColor: "#0ACD7A",
+                          fontSize: 20,
+                          borderRadius: "5px",
+                          width: "100px ",
+                        }}
+                      >
+                        <Stack justifyContent="center" alignItems="center">
+                          <Typography
+                            sx={{ fontSize: 20 }}
+                            className={myFont.className}
+                            color={"primary"}
+                          >
+                            RECOVER
+                          </Typography>
+                        </Stack>
+                      </Box></Stack>
                   </TableCell>
                 </TableRow>
               </ThemeProvider>

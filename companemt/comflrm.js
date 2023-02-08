@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Button, Box, Stack, Typography, Link } from '@mui/material'
 import localFont from '@next/font/local'
-import { Opacity } from '@mui/icons-material'
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { styled } from '@mui/material/styles';
+
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 
