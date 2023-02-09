@@ -99,6 +99,11 @@ a {
 
 
 
+
+
+/* luckyDrar CSS */
+
+
 .body {
   display: flex;
   align-items: center;
@@ -128,10 +133,9 @@ a {
   margin-bottom: 3px;
   position: relative;
   z-index: 950;
+  /* transform:  rotate(15.1deg); */
+  /* transform: rotate(150deg); */
 }
-
-
-
 
 .arrow {
   align-items: center;
@@ -139,37 +143,30 @@ a {
   position: absolute;
   top: 60px;
   z-index: 1111;
-
-
-
+  
+    
 }
 
-
-
 .start-rotate {
-  animation: start-rotate 1.5s linear infinite;
-
-
+  animation: start-rotate 2s  linear infinite  ;
+  
 }
 
 @keyframes start-rotate {
-  50% {
-    transform: rotate(180deg);
-  }
+  
+  /* 100% {
+    transform: rotate(300deg);
+    animation-play-state: paused;
+  } */
 
   100% {
-    transform: rotate(360deg);
-  }
+    transform:  rotate(360deg);
+    
+  } 
 
 }
 
 .stop-rotate {
-
-
-
-
-  animation-delay: 2s;
-  animation-play-state: paused;
-
-
+  /* transform:  rotate(160deg); */
+  animation-play-state:  paused;
 }
