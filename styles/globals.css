@@ -1,4 +1,6 @@
 :root {
+
+  
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -154,10 +156,7 @@ a {
 
 @keyframes start-rotate {
   
-  /* 100% {
-    transform: rotate(300deg);
-    animation-play-state: paused;
-  } */
+  
 
   100% {
     transform:  rotate(360deg);
