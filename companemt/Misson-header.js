@@ -29,7 +29,7 @@ const Top = () => {
     return (
 
         <Box maxWidth="100%">
-            <Box sx={{ height: "160px", width: '100%', position: 'relative', }}>
+            <Box sx={{ height: "100wh", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'modal', height: "67px" }}>
                         <img src='/image/2bg.svg' />
@@ -59,37 +59,8 @@ const Top = () => {
 
 
 
-                <Box maxWidth="100%">
-                    <Stack
-                        direction="row"
-                        justifyContent="center"
-                        alignItems="center"
-                        spacing={5}
 
-                    >
-                        <Typography className={myFont.className} sx={{ pl: 0, fontSize: 30, mt: 0 }}>
-                            TRANSFRORM TO SADNESS
-                        </Typography>
-                        <Box sx={{ pr: 0, fontSize: 30 }}>
-                            <img src='/image/mission/skull.svg' />
-                        </Box>
-                    </Stack>
-                </Box>
-
-                <Stack justifyContent="center"
-                    alignItems="center">
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'modal',
-                        pt: 1,
-
-
-
-                    }}>
-                        <img src='/image/wall_bar.png' />
-                    </Box >
-                    <Bettle />
-                </Stack>
+                
             </Box>
 
 

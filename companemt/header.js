@@ -100,31 +100,14 @@ const Top = () => {
                         alignItems="center"
                     >
 
-                        <Box sx={{
-                            pt: 1,
-                            ml: 5,
-                            zIndex: 'tooltip',
-                        }}>
-                            <img src='/image/nar.svg' />
-                        </Box>
-                        <Link href='../ProfileLock' underline="none">
-
-                            <Box sx={{
-                                pt: 1,
-                                zIndex: 'tooltip',
-                                pl: 2
-                            }}>
-                                <img src='/image/key.svg' />
-                            </Box>
-
-                        </Link>
+                        
 
                         <Box sx={{
-                            pt: 1,
+                            pt: 3,
                             position: 'absolute ',
                             zIndex: 'modal',
                         }}>
-                            <Typography className={myFont.className} variant='h5' sx={{ mb: 1 }} >HAPPINESS</Typography>
+                            <Typography className={myFont.className} fontSize={"27px"} sx={{ mb: 0 }} >BOBIX</Typography>
                         </Box>
 
                         <Box sx={{

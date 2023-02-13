@@ -103,7 +103,7 @@ export default function AccessibleTable() {
                             className="P-type"
                             sx={{ pl: 2, fontSize: "12px" }}
                           >
-                            Possint
+                            Win
                           </Typography>
                         </Box>
                       </Stack>
@@ -196,7 +196,7 @@ export default function AccessibleTable() {
                             className="P-type"
                             sx={{ pl: 2, fontSize: "12px" }}
                           >
-                            Happiness
+                            Draw
                           </Typography>
                         </Box>
                       </Stack>
@@ -287,7 +287,7 @@ export default function AccessibleTable() {
                             className="P-type"
                             sx={{ pl: 2, fontSize: "12px" }}
                           >
-                            Sadness
+                            Lose
                           </Typography>
                         </Box>
                       </Stack>
@@ -377,7 +377,7 @@ export default function AccessibleTable() {
                             className="P-type"
                             sx={{ pl: 2, fontSize: "12px" }}
                           >
-                            Possint
+                            Lose
                           </Typography>
                         </Box>
                       </Stack>
@@ -391,7 +391,7 @@ export default function AccessibleTable() {
                         className={myFont.className}
                         alignItems
                         sx={{
-                          backgroundColor: "#0ACD7A",
+                          backgroundColor: "#FD7066",
                           fontSize: 20,
                           borderRadius: "5px",
                           width: "100px ",
@@ -403,7 +403,7 @@ export default function AccessibleTable() {
                             className={myFont.className}
                             color={"primary"}
                           >
-                            RECOVER
+                            -3 POINTS
                           </Typography>
                         </Stack>
                       </Box></Stack>

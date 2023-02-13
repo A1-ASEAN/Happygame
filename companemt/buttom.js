@@ -29,12 +29,13 @@ export default function Butoom() {
         <ThemeProvider theme={theme}>
             <Stack alignItems="center">
                 <Box width={'390px'}>
-
+                    
                     <Stack direction="row" justifyContent="center"
-                        alignItems="center" >
+                        alignItems="center" spacing={3} >
                         <Box>
                             <Stack justifyContent="center"
-                                alignItems="center">
+                                alignItems="center" >
+                                    
 
 
                                 <Link href='/Scan'>
@@ -45,7 +46,7 @@ export default function Butoom() {
                                         spacing={0}
                                         sx={{ m: 0 }}>
                                         <Typography className={myFont.className} sx={{ fontSize: '30px', height: "35px" }}>
-                                            SCAN
+                                            match
                                         </Typography>
                                         <Box sx={{ mb: 1.5 }}>
                                             <img src='/image/buttom/hart.svg' />
@@ -56,6 +57,21 @@ export default function Butoom() {
                                 </Link>
                             </Stack>
                         </Box>
+                        <Box>
+                            <Button color="primary" variant="contained" sx={{ boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", mt: 1, width: 180, height: 60, zIndex: 'tooltip' }}   >
+                                    <Stack justifyContent="center"
+                                        alignItems="center"
+                                        direction="column"
+                                        spacing={0}
+                                        sx={{ m: 0 }}>
+                                        <Typography className={myFont.className} sx={{ fontSize: '30px', height: "35px" }}>
+                                            scan
+                                        </Typography>
+                                        <Box sx={{ mb: 1.5 }}>
+                                            <img src='/image/buttom/hart.svg' />
+                                        </Box>
+                                    </Stack>
+                                </Button></Box>
                         <Box sx={{
                             position: 'relative',
                             zIndex: 'tooltip',

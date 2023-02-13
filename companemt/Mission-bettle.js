@@ -2,7 +2,7 @@
 import { Box, IconButton, Stack, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import localFont from '@next/font/local'
-import Button from '@mui/material/Button';
+
 import { useState } from 'react';
 
 
@@ -21,15 +21,24 @@ const theme = createTheme({
         },
     },
 });
+const Showbaryallow = ()=>{
+    return <Box sx={{
+        position: 'absolute',
+        pt: 0.7,
+        pl: 0.4,
+        zIndex: 'tooltip',
+    }}>
+        <Box sx={{ width: 70, height: 3.5, bgcolor: "#FFC05F", zIndex: 'tooltip' }}></Box>
+    </Box>
+};
 
-
-const Top = () => {
+const Top = ({secpage}) => {
 
     const [tab, settab] = useState(false)
-
+    const [showbar,setShowbar] = useState(<Showbaryallow/>)
 
     const toggle = (index) => {
-        settab(index)
+        settab(index),setShowbar()
         console.log(index)
     }
     return (
@@ -38,7 +47,7 @@ const Top = () => {
                 <Box sx={{
                     height: '100%', width: "100vw",
 
-                    zIndex: 'tooltip',
+                    zIndex: 'tooltip',pt:1.2
                 }}>
                     <Stack direction="row"
                         justifyContent="space-evenly"
@@ -46,11 +55,11 @@ const Top = () => {
 
                         <Box onClick={() => toggle(1)}>
 
-                            <Typography className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>DAILY</Typography>
+                            <Typography onClick={() => secpage("Daily")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>DAILY</Typography>
                             {tab == 1 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.5,
+                                    pt: 0.7,
                                     pl: 0.4,
                                     zIndex: 'tooltip',
                                 }}>
@@ -58,15 +67,16 @@ const Top = () => {
                                 </Box> : <Box >
 
                                 </Box>}
+                                {showbar}
 
                         </Box>
                         <Box onClick={() => toggle(2)}>
 
-                            <Typography className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>WEEKLY</Typography>
+                            <Typography onClick={() => secpage("WEEKLY")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>WEEKLY</Typography>
                             {tab == 2 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.1,
+                                    pt: 0.7,
                                     pl: 1,
                                     zIndex: 'tooltip',
                                 }}>
@@ -78,11 +88,11 @@ const Top = () => {
                         </Box>
                         <Box onClick={() => toggle(3)}>
 
-                            <Typography className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>SPECIAL</Typography>
+                            <Typography onClick={() => secpage("SPECIAL")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>SPECIAL</Typography>
                             {tab == 3 ?
                                 <Box sx={{
                                     position: 'absolute',
-                                    pt: 0.1,
+                                    pt: 0.7,
                                     pl: 1,
                                     zIndex: 'tooltip',
                                 }}>

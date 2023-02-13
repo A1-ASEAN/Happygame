@@ -1,4 +1,5 @@
-import React from "react";
+
+import React from 'react';
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -6,7 +7,6 @@ import Button from "@mui/material/Button";
 import localFont from "@next/font/local";
 
 const myFont = localFont({ src: "../gamer_2/Gamer.ttf" });
-
 const Mision_bar=()=>{
     return(<Box sx={{ width: "100%", height: "110px" }}>
     <Stack
@@ -89,10 +89,9 @@ const Mision_bar=()=>{
 }
 
 
-
-function missionmain() {
-  return (
-    <Stack justifyContent="flex-start" alignItems="center" sx={{ mt: 2 }}>
+const mission_weekly = () => {
+    return <div>
+        <Stack justifyContent="flex-start" alignItems="center" sx={{ mt: 2 }}>
       <Box sx={{ width: "100vw", height: "100%", ml: 5 }}>
         <Stack
           direction="column"
@@ -100,10 +99,6 @@ function missionmain() {
           alignItems="stretch"
           spacing={0.5}
         >
-          <Mision_bar/>
-          <Mision_bar/>
-          <Mision_bar/>
-          <Mision_bar/>
           <Mision_bar/>
           <Mision_bar/>
           <Mision_bar/>
@@ -402,7 +397,9 @@ function missionmain() {
         </Stack>
       </Box>
     </Stack>
-  );
+
+    </div>;
 }
 
-export default missionmain;
+
+export default mission_weekly;
