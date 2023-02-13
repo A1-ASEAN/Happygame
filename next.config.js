@@ -7,11 +7,13 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     })
     return config
-  }
+  },
+  
 }
 
-module.exports = nextConfig
 
+
+module.exports = nextConfig
 
 
 

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import localFont from '@next/font/local'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footernavbar from '../companemt/recover-footer'
+import styled, { keyframes } from 'styled-components';
 
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
@@ -12,24 +13,39 @@ const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
 
 
 
-const Popup = ({ gift, reset }) => {
+const Popup = ({ divide, reset }) => {
 
+
+    
     return (
-        <Box sx={{ width: "100%", height: "100%", display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'fixed', zIndex: 1000, pb:{ xs:'195px',sm:"360px",md:"700px"} }}>
+        <Box sx={{ width: "100%", height: "100%", display: 'flex', alignItems: 'center', justifyContent: 'center',top:0, position: 'fixed', zIndex: 1000, }}>
             <Box sx={{ width: "100%", height: "100%", bgcolor: '#000', position: 'absolute', opacity: 0.7 }}>
 
             </Box>
 
-            <Box className={myFont.className}  sx={{pt:20,zIndex: 1100,color:'#fff',fontSize:{xs:50,sm:80} }}>
+            <Box className={myFont.className}  sx={{zIndex: 1100,color:'#fff',fontSize:{xs:50,sm:80} }}>
 
                 {/* // YOU GIFT IS  */}
 
-                YOU GIFT IS <Typography color={'#F7EF8A'} display={"flex"} alignItems={"center" } justifyContent={"center"} className={myFont.className} sx={{fontSize:{xs:70,sm:100}}} >{gift}</Typography>
+                YOU GIFT IS <Typography color={'#F7EF8A'} display={"flex"} alignItems={"center" } justifyContent={"center"} className={myFont.className} sx={{fontSize:{xs:70,sm:100},zIndex: 2000 }} >
+                {divide== 0 ? "600$":''}
+                {divide==1 ? "500$":''}
+                {divide==2 ? "400$":''}
+                {divide==3 ? "300$":''}
+                {divide==4 ? "200$":''}
+                {divide==5 ? "100$":''}
+                {divide==6 ? "50$":''}
+                {divide==7 ? "LOSE":''}
+                {divide==8 ? "900$":''}
+                {divide==9 ? "800$":''}
+                {divide==10 ? "700$":''}
+                {divide==11 ? "JECKPOT$":''}
+                </Typography>
 
                 {/* /// botton reset */}
                 <Box sx={{ width: "100%", height: "100%", display: 'flex', alignItems: 'center', justifyContent: "center",mt:5 }}>
                     <Button onClick={reset} variant="contained" color='error'
-                        sx={{ display: 'flex', alignItems: 'center', justifyContent: "center", height: "54px", width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", zIndex: 2 }}>
+                        sx={{ display: 'flex', alignItems: 'center', justifyContent: "center", height: "54px", width: '186px', boxShadow: "inset 0 -0.9em 0 -0.35em rgba(0,0,0,0.17)", zIndex: 2000 }}>
                         <Typography className={myFont.className} sx={{ p: 0, fontSize: "30px", height: "50px" }} >
                             COMFIRM
                         </Typography>
@@ -46,72 +62,113 @@ const Popup = ({ gift, reset }) => {
 }
 
 
+
+const Body = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    position: relative;
+    `
+
+
+const Krob = styled.div`
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    `
+
+const Midder = styled.div`
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    `
+
+
+const Cirecle = styled.div`
+    width: 279.05px;
+    height: 279.05px;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 950;
+    opacity:1; 
+    animation: ${props => props.lucky} 3s   forwards;
+    `
+const Text = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation:${props => props.opcity} 3.2s ease-in-out;
+    `
+
 function infectmain() {
 
+    
 
-    const reset = () => {
-
-        setstate('circle')
-        setIdxPop()  
-        
-    }
-
-    const [state, setstate] = useState('circle');
-    const [IdxPop, setIdxPop] = useState();
-
-
-    let time = [4100.33, 4260.33, 4427.33, 4593.33, 4760.33, 4930.33, 5100.33, 5270.33, 5440.33, 5610.33, 5770.33, 5930.33]
-    let jacpot = ["600$", "500$", "400$", "300$", "200$", "100$", "50$", "LOSE", "900$", "800$", "700$", "JACKPOT"]
-
-    const [index, setindex] = useState();
+    const [rendomdeg, setRendomdeg] = useState();
 
     useEffect(() => {
-        setindex(Math.floor(Math.random() * time.length))
-    }, [])
-    const [gift, setGift] = useState();
+        setRendomdeg(Math.floor(Math.random() * 359))
+        
+    }, [setRendomdeg])
+
+    console.log(rendomdeg)
+
+    let gift = rendomdeg
+
+    console.log("gift = ", gift)
+
+    const [divide, setDivide] = useState()
 
 
+    console.log (divide)
 
-    let number = time[index]
+    let deg = rendomdeg + 1455
 
-    console.log("index top = ", index)
-    console.log("gift top = ", gift)
+    // useState Lucky and opcity gift
+
+    const [lucky, setLucky] = useState()
+    const [opcity, setOpcityy] = useState()
+
+    // startRotation
 
     const startRotation = () => {
+        setRendomdeg(Math.floor(Math.random() * 359))
+        // check rendom
+        // setRendomdeg(360)
+        setLucky(keyframes` 
+        0% {transform: rotate(0)}
         
-        setindex(Math.floor(Math.random() * time.length))
-        setstate("circle start-rotate");
-        setTimeout(() => {
-            setstate("circle start-rotate stop-rotate")
-            setIdxPop(index)
-            setGift(jacpot[index])
+        100% {transform: rotate(${deg + `deg`})  }  
+        
+        `)
 
-        }, Math.floor(Math.random() * 150 + number));
-
-        console.log("number in = ", number)
-        console.log("index in = ", index)
-        console.log("setindex in = ", index)
-        // setTimeout(() => {
-        //     setNumber(number = fruits[index])
-
-        // }, Math.floor(Math.random() * 150 + number));
-        // setTimeout(() => {
-        //     setstate("circle start-rotate stop-rotate")
-
-        // },5930.33);
-        // console.log(setTimeout)
+        setDivide(Math.floor(gift / 30))
+        setOpcityy(keyframes` 
+        0% {opacity:0;}
+        99% {opacity:0; }  
+        100% {opacity:1; }
+        `)
     }
+
+    // Style companent
+    const reset = () =>{ setDivide() }
 
 
 
     return (
 
-        <Box width={"100%"} sx={{ pt:{xs:"20px",sm:"100px",md:"230px"} }}>
+
+
+        <Box width={"100%"} sx={{ pt: { xs: "20px", sm: "100px", md: "230px" } }}>
             <Stack alignItems={"center"}>
 
                 {/* Font */}
 
-                <Box height={30} zIndex={"toltip"}>
+                <Box height={20} zIndex={"toltip"}>
                     <img src="/font.svg" />
                 </Box>
 
@@ -143,21 +200,19 @@ function infectmain() {
                 {/* lucky */}
 
                 <Box>
-                    <div className='body'>
-
-                        <div className='krob'>
+                    <Body>
+                        <Krob className='krob'>
                             <img src="/krob.svg" />
-                        </div>
-                        <div className='midder'>
+                        </Krob>
+                        <Midder className='midder'>
                             <img src="/midder.svg" />
-                        </div>
-                        <div className={state}>
-                            <div className='lucky'>
-                                <img src='/lucky.svg' />
-                            </div>
-                        </div>
+                        </Midder >
 
-                    </div>
+                        <Cirecle lucky={lucky} className='cirecle'>
+                            <img src='/lucky.svg' />
+                        </Cirecle>
+
+                    </Body>
                 </Box>
 
                 {/* clounds 3 */}
@@ -181,20 +236,31 @@ function infectmain() {
                         SPIN
                     </Typography>
                 </Button>
-                {IdxPop == 0 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 1 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 2 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 3 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 4 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 5 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 6 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 7 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 8 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 9 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 10 ? <Popup gift={gift} reset={reset}/> : ""}
-                {IdxPop == 11 ? <Popup gift={gift} reset={reset}/> : ""}
+                {/* {IdxPop == 0 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 1 ? : ""}
+                {IdxPop == 2 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 3 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 4 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 5 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 6 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 7 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 8 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 9 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 10 ? <Popup gift={gift} reset={reset} /> : ""}
+                {IdxPop == 11 ? <Popup gift={gift} reset={reset} /> : ""} */}
 
-
+                {divide == 0 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 1 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 2 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 3 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 4 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 5 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 6 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 7 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 8 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 9 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 10 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
+                {divide == 11 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
 
 
             </Stack>
