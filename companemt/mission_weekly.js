@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import localFont from "@next/font/local";
-
+import Time from './timeset_daily';
 const myFont = localFont({ src: "../gamer_2/Gamer.ttf" });
 const Mision_bar=()=>{
     return(<Box sx={{ width: "100%", height: "110px" }}>
@@ -25,7 +25,7 @@ const Mision_bar=()=>{
           <Box sx={{ height: 17.7, width: 17.7 }}>
             <img src="/image/mission/Clock.svg" />
           </Box>
-          <Typography sx={{ mb: "0.5px" }}>-</Typography>
+          <Typography fontSize={"12px"} sx={{ mb: "0.5px" }}><Time/></Typography>
         </Stack>
         <Typography sx={{ fontSize: "15px" }}>
           ภารกิจจะเปิดเผยเมื่อกดทำภารกิจ
@@ -126,7 +126,7 @@ const mission_weekly = () => {
                     <img src="/image/mission/Clock.svg" />
                   </Box>
                   <Typography sx={{ fontSize: "12px", mb: "0.5px" }}>
-                    เหลือเวลา 5.00 นาที
+                  <Time />
                   </Typography>
                 </Stack>
                 <Typography sx={{ fontSize: "15px" }}>
@@ -204,7 +204,7 @@ const mission_weekly = () => {
                     <img src="/image/mission/Clock.svg" />
                   </Box>
                   <Typography sx={{ fontSize: "12px", mb: "0.5px" }}>
-                    เหลือเวลา 1 ชั่วโมง
+                    <Time/>
                   </Typography>
                 </Stack>
                 <Typography sx={{ fontSize: "15px" }}>

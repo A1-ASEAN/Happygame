@@ -163,7 +163,7 @@ function infectmain() {
 
 
 
-        <Box width={"100%"} sx={{ pt: { xs: "20px", sm: "100px", md: "230px" } }}>
+        <Box width={"100%"} sx={{ pt: { xs: "20px", sm: "100px", md: "100px" ,lg:"220px"} }}>
             <Stack alignItems={"center"}>
 
                 {/* Font */}
@@ -236,18 +236,7 @@ function infectmain() {
                         SPIN
                     </Typography>
                 </Button>
-                {/* {IdxPop == 0 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 1 ? : ""}
-                {IdxPop == 2 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 3 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 4 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 5 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 6 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 7 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 8 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 9 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 10 ? <Popup gift={gift} reset={reset} /> : ""}
-                {IdxPop == 11 ? <Popup gift={gift} reset={reset} /> : ""} */}
+                
 
                 {divide == 0 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
                 {divide == 1 ? <Text opcity={opcity}><Popup  divide={divide} reset={reset}/></Text>  : ""}
