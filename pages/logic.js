@@ -1,21 +1,15 @@
-
-import { Box, Stack } from "@mui/system";
-import Styles from '../styles/animation.module.css'
-import Vs from "./SVGS/Vs"
-import { Typography } from "@mui/material";
-import localFont from '@next/font/local'
-import Footernavbar from '../companemt/recover-footer'
-import React, { useEffect, useState } from 'react'
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-
-const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
-
-export default function App() {
+import { Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import Winlose from '../pages/winlose' 
 
 
-  const [Item_attack, setItem_attack] = useState(0)//have 4 item [1,2,3,4]
-    const [Item_def, setItem_def] = useState(0) //have 4 item [1,2,3,4]
+const logic = () => {
+
+// logic Attack
     
+    const [Item_attack, setItem_attack] = useState(0)//have 4 item [1,2,3,4]
+    const [Item_def, setItem_def] = useState(0) //have 4 item [1,2,3,4]
+
 
     const [Result_of_vs, setResult] = useState() // have 4 state 0 = lose, 1 = win  ,2 = calculate ATK complete,3 = calculate def complete
     const [Reward_vs_player, setsReward_vs_player] = useState(0) // coin player have 
@@ -23,11 +17,7 @@ export default function App() {
 
     const [Coin, setCoin] = useState(50)// variable have value random coin
 
-
-    const [SoreP, setSoreP] = useState(0) // coin player have 
-    const [SoreE, setSoreE] = useState(0) // coin enemy have
-
-   
+    const AAA = Reward_vs_player
 
 
     let winner =1;
@@ -40,12 +30,12 @@ export default function App() {
         setItem_attack( Item_attack + arrayItem[1]);
         setItem_def( Item_def + arrayItem[1]);
       }, []);
-    console.log(arrayItem[0])
+
+    
 
 // คอน กระดาษ กรรไก
 
-    const [StatusP, setStatusP] = useState('')
-    const [StatusE, setStatusE] = useState('')
+    const [state, setstate] = useState('')
     const abc = ["A","B","C"];
     const index = abc.length
     const lengthE = Math.floor(Math.random() * index);
@@ -65,36 +55,30 @@ export default function App() {
     const [A, setA] = useState()
     const [B, setB] = useState()
     
-      
-    
-    
 
 // if   คอน กระดาษ กรรไก
 
     if (player == "A" && enemy == "A" ) {
-        console.log("DRAW")
+        console.log("Draw")
         setA("ค้อน")
         setB("ค้อน")
         setplayer('')
-        setStatusP('DRAW')  
-        setStatusE('DRAW') 
+        setstate('Draw')  
         setResult('5')
     } else if (player == "A" && enemy == "B"){
-        console.log("LOSE")
+        console.log("Lose")
         setA("ค้อน")
         setB("กรรไก")
         setplayer('')
-        setStatusP('LOSE')
-        setStatusE('WIN') 
+        setstate('Lose')
         setResult('0')
     }
     else if (player == "A" && enemy == "C"){
-        console.log("WIN")
+        console.log("Win")
         setA("ค้อน")
         setB("กระดาษ")
         setplayer('')
-        setStatusP('WIN')
-        setStatusE('LOSE')
+        setstate('Win')
         setResult('1')
 
     }else if (player == "B" && enemy == "A"){
@@ -102,17 +86,15 @@ export default function App() {
         setA("กรรไก")
         setB("ค้อน")
         setplayer('')
-        setStatusP('LOSE')
-        setStatusE('WIN')
+        setstate('Lose')
         setResult('0')
 
     }else if (player == "B" && enemy == "B"){
-        console.log("DRAW")
+        console.log("Draw")
         setA("กรรไก")
         setB("กรรไก")
         setplayer('')
-        setStatusP('DRAW')
-        setStatusE('DRAW')
+        setstate('Draw')
         setResult('5') 
 
     }else if (player == "B" && enemy == "C"){
@@ -120,8 +102,7 @@ export default function App() {
         setA("กรรไก")
         setB("กระดาษ")
         setplayer('')
-        setStatusP('WIN')
-        setStatusE('LOSE')
+        setstate('Win')
         setResult('1')
         
         
@@ -131,8 +112,7 @@ export default function App() {
         setA("กระดาษ")
         setB("ค้อน")
         setplayer('')
-        setStatusP('WIN')
-        setStatusE('LOSE')
+        setstate('Win')
         setResult('1')
 
     }else if (player == "C" && enemy == "B"){
@@ -140,17 +120,15 @@ export default function App() {
         setA("กระดาษ")
         setB("กรรไก")
         setplayer('')
-        setStatusP('LOSE')
-        setStatusE('WIN')
+        setstate('Lose')
         setResult('0')
 
     }else if (player == "C" && enemy == "C"){
-        console.log("DRAW")
+        console.log("Draw")
         setA("กระดาษ")
         setB("กระดาษ")
         setplayer('')
-        setStatusP('DRAW') 
-        setStatusE('DRAW')
+        setstate('Draw') 
         setResult('5')
 
     }else {}
@@ -169,6 +147,7 @@ export default function App() {
 // comdition use item
 
 
+  
     if (Result_of_vs == 0) {
         console.log("_______________________________________________")
         console.log("Condition lose")
@@ -286,11 +265,6 @@ export default function App() {
         console.log('Result_of_vs is :',Result_of_vs);
         console.log('Reward_vs_player is :',Reward_vs_player);
         console.log('Deward_vs_player is :',Deward_vs_enemy);
-
-
-
-        setSoreP( Reward_vs_player)
-        setSoreE (Deward_vs_enemy)
     setResult(4)
     console.log("_______________________________________________")
     }else if(Result_of_vs == 5){
@@ -308,279 +282,19 @@ export default function App() {
     console.log("_______________________________________________")
     }else{}
 
-    
 
-  // CSS 
-
-  const animate1 = {
-    opacity: [0, 0, 1, 1, 1],
-    y: [0, -100, 60, 60, 0],
-  }
-
-  const animate2 = {
-    opacity: [0, 0, 1, 1, 1],
-    y: [0, 100, -60, -60, 0]
-  }
-
-  const transition = {
-    duration: 5,
-    ease: "easeOut",
-    times: [0, 2, 1, 1, 0.5, 0.5],
-    // repeat: Infinity,
-    repeatDelay: 3,
-  }
-
-  const TimeOpacity = {
-    duration: 5,
-    ease: "easeOut",
-    repeatDelay: 5,
-  }
-
-  const TimeOpacity2 = {
-    duration: 5.2,
-    ease: "easeOut",
-    repeatDelay: 5,
-  }
-
-  const TimeOpacity3 = {
-    duration: 5.5,
-    ease: "easeOut",
-    repeatDelay: 5,
-  }
-
-  const itemDelay = {
-    duration: 5.5,
-    repeatDelay: 5,
-  }
-
-  const itemOpacity = {
-    opacity: [0, 0, 0, 0, 1]
-  }
-
-  const Statusdelay = {
-    duration: 7,
-    repeatDelay: 6,
-  }
-
-  const StatusOpacity = {
-    opacity: [0, 0, 0, 0, 0, 1]
-  }
-
-  const pointOpacity = {
-    opacity: [0, 0, 0, 0, 0, 1]
-  }
-
-  const pointDelay = {
-    duration: 8,
-    repeatDelay: 6,
-  }
-
-  const Font = {
-    display: "flex", alignItems: 'center', justifyContent: "center", fontSize: "50px", height: '20px', pl: 3, pb: 3
-  }
-
-  const Clound1 = {
-    top: { xs: "15%" }, right: { xs: "10%" }
-  }
-
-  const Clound2 = {
-    top: { xs: "40%", }, left: { xs: "-30%", sm: "8%" }
-  }
-
-  const Clound3 = {
-    top: { xs: "65%" }, right: { xs: "5%" }
-  }
-
-  const Top = {
-    top: { xs: "23%", sm: '32%', md: '33%' }, left: { xs: "20%", sm: "38%" }
-  }
-
-  
-
-  // let ScoreMinus = Reward_vs_player
-  // let ScorePlus = Deward_vs_enemy
-  
-  
-
-  // const count = useMotionValue(0);
-  // const rounded = useTransform(count, Math.round)
-    
-  // useEffect(() => {
-  //   const animation = animate(count,ScoreMinus, { duration: 1.5,delay:8 });
-  //   return animation.stop;
-  // }, []);
-
-  // const count1 = useMotionValue(0);
-  // const rounded1 = useTransform(count1, Math.round);
-
-  // useEffect(() => {
-  //   const animation1 = animate(count1,ScoreMinus, { duration: 1.5,delay:8 });
-  //   return animation1.stop;
-  // }, []);
- 
-  
-  // HTML
-
-  return (
-    <Box height={"100%"} width={"100%"} paddingBottom={15}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={pointOpacity}
-        transition={pointDelay}>
-        <Box display={"flex"} position={"fixed"} sx={Top}>
-          <Stack spacing={"260px"} paddingBottom={10} className={myFont.className}>
-
-            
-            <motion.h1 className={Styles.FontGreen}>{Deward_vs_enemy}</motion.h1>
-            
-            <motion.h1 className={Styles.FontGreen}>{Reward_vs_player}</motion.h1>
-
-          </Stack >
-        </Box>
-      </motion.div>
-
-      <Box display={"flex"} position={"fixed"} sx={Clound1}>
-        <img src='/image/recover/clounds-1.svg' />
-      </Box>
-
-      <Box display={"flex"} position={"fixed"} sx={Clound2}>
-        <img src='/image/recover/clounds-2.svg' />
-      </Box>
-
-      <Box display={"flex"} position={"fixed"} sx={Clound3}>
-        <img src='/image/recover/clounds-3.svg' />
-      </Box>
-
-
-      <Stack height={"100%"} width={"100%"} alignItems={'center'} justifyContent={"center"} direction={"column"} spacing={"160px"} >
-
-        {/* PF 1 */}
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          className={Styles.Box1}
-          animate={animate1}
-          transition={transition}>
-
-          {/* font Enemy */}
-
-          <motion.div animate={StatusOpacity} transition={Statusdelay}>
-            <Typography className={myFont.className} sx={Font} >
-              {StatusE}
-            </Typography>
-          </motion.div>
-          <Box width={"20px"} height={"20px"}>
-            <img className={Styles.Item1} src="/image/PF1.png" />
-          </Box>
-
-          {/* Item Enemy */}
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            transition={itemDelay}
-            animate={itemOpacity}
-          >
-            <img className={Styles.Item2} src="/image/item/6.svg" />
-          </motion.div>
-        </motion.div>
-
-        {/* PF 2 */}
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          className={Styles.Box1}
-          animate={animate2}
-          transition={transition}
-        >
-
-          {/* font Player */}
-          <motion.div animate={StatusOpacity} transition={Statusdelay}
-          >
-            <Typography className={myFont.className} sx={Font} >
-              {StatusP}
-            </Typography>
-          </motion.div>
-          <Box width={"20px"} height={"20px"}>
-            <img className={Styles.Item1} src="/image/PF2.png" />
-          </Box>
-
-          {/* Item Player */}
-
-          <motion.div initial={{ opacity: 0 }} transition={itemDelay} animate={itemOpacity}>
-            <img className={Styles.Item2} src="/image/item/1.svg" />
-          </motion.div>
-
-        </motion.div>
-
-
-
-        <Box display={'flex'} position={"fixed"} zIndex={2000} paddingBottom={30} paddingRight={20} opacity={0} >
-
-          {/* VS */}
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 1, 1, 0] }}
-            transition={{
-              duration: 2,
-
-            }}>
-            <Box width={"50px"} height={"120px"} paddingTop={12}  >
-              <Vs />
-            </Box>
-          </motion.div >
-
-          {/* Boom sm */}
-
-          <Box width={"1px"} height={"120px"} position={"fixed"} paddingTop={7} paddingLeft={7}>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: [0, 0, 0, 1, 0]
-              }}
-              transition={TimeOpacity}
-            >
-              <img className="boom" src="/image/Attack/2.svg" />
-            </motion.div>
-          </Box>
-
-          {/* Boom md */}
-
-          <Box width={"1px"} height={"120px"} position={"fixed"} paddingTop={6} paddingLeft={4} >
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: [0, 0, 0, 1, 0]
-              }}
-              transition={TimeOpacity2}
-            >
-              <img className="boom" src="/image/Attack/2.svg" />
-            </motion.div>
-          </Box>
-
-          {/* Boom big */}
-
-          <Box width={"1px"} height={"20px"} position={"fixed"} paddingTop={1}>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: [0, 0, 0, 1, 0]
-              }}
-              transition={TimeOpacity3}
-            >
-              <img className="boom" src="/image/Attack/3.svg" />
-            </motion.div>
-          </Box>
-
-        </Box>
-
-      </Stack>
-
-
-      < Footernavbar />
-
-    </Box >
-
-
-  );
+    return <div> 
+        <Typography>Reward_vs_player is : {Reward_vs_player}</Typography>
+        <Typography>Deward_vs_player is : {Deward_vs_enemy}</Typography>
+        <Typography>Result of playing is : {state} </Typography>
+        <Typography>Result of playing is : {A} </Typography>
+        <Typography>Result of enemy is : {B} </Typography>
+        
+       
+    </div>;
 }
+
+
+// #endregion
+
+export default logic;
