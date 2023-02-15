@@ -49,22 +49,14 @@ const Top = () => {
                                 </Stack>
                                 <Stack direction="row" alignItems="center" sx={{ pr: 1 }}>
 
-                                    <Typography className={myFont.className} sx={{ pr: 0, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
+                                    <Typography className={myFont.className} sx={{ pr: 0, fontSize: 30 }} color={"secondary"} >HELP</Typography>
                                     <img src="/image/book.svg" />
                                 </Stack>
                             </Stack>
                         </ThemeProvider>
                     </Box>
-                </Stack>
-
-
-
-                
-
-                
+                </Stack>  
             </Box>
-
-
         </Box >
 
 

@@ -69,7 +69,7 @@ const Top = () => {
                             <Box>
                                 <Stack direction="row" sx={{ pr: 1, fontSize: 30 }}>
 
-                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
+                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HELP</Typography>
                                     <img src="/image/book.svg" />
                                 </Stack>
                             </Box>

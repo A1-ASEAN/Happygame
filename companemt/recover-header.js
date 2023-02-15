@@ -28,7 +28,7 @@ const theme = createTheme({
 const Top = () => {
     return (
 
-        <Box  >
+        <Box>
             <Box sx={{ height: "79px", width: '100%', position: 'relative', }}>
                 <Stack alignItems="center">
                     <Box sx={{ position: 'relative', zIndex: 'drawer', height: "67px" }}>
@@ -46,21 +46,15 @@ const Top = () => {
                                 </Stack>
                                 <Stack direction="row" alignItems="center" sx={{ pr: 1 }}>
 
-                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HEPL</Typography>
+                                    <Typography className={myFont.className} sx={{ pr: 1, fontSize: 30 }} color={"secondary"} >HELP</Typography>
                                     <img src="/image/book.svg" />
                                 </Stack>
                             </Stack>
                         </ThemeProvider>
                     </Box>
-
                 </Stack>
             </Box>
-            
         </Box >
-        
-
-
-
 
     );
 }

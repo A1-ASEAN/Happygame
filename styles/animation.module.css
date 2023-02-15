@@ -1,0 +1,42 @@
+.Box1{
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.Box2{
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+.Item1{
+    position: relative;
+    
+    
+
+}
+.Item2{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 30px;  
+}
+
+.boom{
+    opacity: 0;
+}
+
+.clounds1{
+    top:400px
+    
+}
+
+.FontGreen{
+    color: green;
+}
+
+.FontRed{
+    color: red;
+}

@@ -5,20 +5,19 @@ import Main from '../companemt/mission-main'
 import * as React from 'react';
 import Weekly from '@/companemt/mission_weekly';
 import Box from '@mui/material/Box';
-import SPECIAL from '@/companemt/mission-special';
-
+import Special from '@/companemt/mission-special';
 import Footernavbar from '../companemt/misson-foternavbar'
 import { Stack } from '@mui/system';
 
 
 function Mission() {
     const [page, setPage] = React.useState();
-  const [showmain, setShowmain] = React.useState(<Main/>);
+    const [showmain, setShowmain] = React.useState(<Main/>);
 
-  const secpage = (index) => {
-    setPage(index), setShowmain();
-    console.log(index);
-  };
+    const secpage = (index) => {
+        setPage(index), setShowmain();
+        console.log(index);
+    };
 
     return (
         <Box height={"100vh"} overflow={'hidden'}>
@@ -26,34 +25,35 @@ function Mission() {
 
                 <Box >
 
-                <Header />
-                <Stack justifyContent="center"
-                    alignItems="center">
-                    <Box sx={{
-                        position: 'absolute',
-                        zIndex: 'modal',
-                        pt: 3,
+                    <Header />
+                    <Stack justifyContent="center"
+                        alignItems="center">
+                        <Box sx={{
+                            position: 'absolute',
+                            zIndex: 'modal',
+                            pt: 3,
 
 
 
-                    }}>
-                        <img src='/image/wall_bar.png' />
-                    </Box >
-                    <Battle secpage={secpage} />
-                </Stack>
+                        }}>
+                            <img src='/image/wall_bar.png' />
+                        </Box >
+                        <Battle secpage={secpage} />
+                    </Stack>
 
                 </Box>
 
                 <Box flex={1} overflow={"hidden"} sx={{ overflowY: "auto" }}>
-                    
-                    {page == "Daily" ? <Main /> : ""}
-            {page == "WEEKLY" ? <Weekly /> : ""}
-            {page == "SPECIAL" ? <SPECIAL /> : ""}
-            {showmain}
-                    
 
+                    {page == "Daily" ? <Main /> : ""}
+                    {page == "WEEKLY" ? <Weekly /> : ""}
+                    {page == "SPECIAL" ? <Special /> : ""}
                     
-                    
+                    {showmain}
+
+
+
+
                 </Box>
 
                 <Box >

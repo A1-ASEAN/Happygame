@@ -161,9 +161,7 @@ function infectmain() {
 
     return (
 
-
-
-        <Box width={"100%"} sx={{ pt: { xs: "20px", sm: "100px", md: "100px" ,lg:"220px"} }}>
+        <Box width={"100%"} sx={{ pt: { xs: "20px", sm: "100px", md: "80px" ,lg:"220px"} }}>
             <Stack alignItems={"center"}>
 
                 {/* Font */}
@@ -179,7 +177,7 @@ function infectmain() {
                     <Stack direction="row"
                         justifyContent="flex-end"
                         alignItems="flex-start">
-                        <Box position={"relative"} sx={{ height: 70 }} zIndex={'tooltip'} >
+                        <Box position={"relative"} sx={{ height: {xs: "100px",sm:"120px"} }} zIndex={'tooltip'} >
                             <img src='/image/recover/clounds-1.svg' />
                         </Box>
                     </Stack>
