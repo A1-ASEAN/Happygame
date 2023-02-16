@@ -67,7 +67,7 @@ const Scan_body = () => {
               <img src="/image/Scan/scan.png"/>
               </Box>
 
-             <Link href={'/connect-attack'}>
+             <Link href={'/Attack'}>
              <Box sx={{pt:4}}> 
               <img src="/image/Scan/Record button.png"/>
              </Box>

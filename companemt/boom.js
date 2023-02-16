@@ -66,7 +66,24 @@ export default function App() {
     const [B, setB] = useState()
     
       
+    const count1 = useMotionValue(0);
+    const rounded1 = useTransform(count1, Math.round);
     
+  
+    const count = useMotionValue(0);
+    const rounded = useTransform(count, Math.round)
+      
+    useEffect(() => {
+  
+      
+      const animation = animate(count,Deward_vs_enemy, { duration: 1.5,delay:8 });
+     
+      const animation1 = animate(count1,Reward_vs_player, { duration: 1.5,delay:8 });
+      return ()=>{
+        animation.stop
+        animation1.stop
+      }
+    }, [Deward_vs_enemy,Reward_vs_player]);
     
 
 // if   คอน กระดาษ กรรไก
@@ -397,26 +414,12 @@ export default function App() {
 
   
 
-  // let ScoreMinus = Reward_vs_player
-  // let ScorePlus = Deward_vs_enemy
-  
   
 
-  // const count = useMotionValue(0);
-  // const rounded = useTransform(count, Math.round)
-    
-  // useEffect(() => {
-  //   const animation = animate(count,ScoreMinus, { duration: 1.5,delay:8 });
-  //   return animation.stop;
-  // }, []);
 
-  // const count1 = useMotionValue(0);
-  // const rounded1 = useTransform(count1, Math.round);
+ 
 
-  // useEffect(() => {
-  //   const animation1 = animate(count1,ScoreMinus, { duration: 1.5,delay:8 });
-  //   return animation1.stop;
-  // }, []);
+
  
   
   // HTML
@@ -431,9 +434,9 @@ export default function App() {
           <Stack spacing={"260px"} paddingBottom={10} className={myFont.className}>
 
             
-            <motion.h1 className={Styles.FontGreen}>{Deward_vs_enemy}</motion.h1>
+            <motion.h1 className={Styles.FontGreen}>{rounded}</motion.h1>
             
-            <motion.h1 className={Styles.FontGreen}>{Reward_vs_player}</motion.h1>
+            <motion.h1 className={Styles.FontGreen}>{rounded1}</motion.h1>
 
           </Stack >
         </Box>

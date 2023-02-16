@@ -1,76 +1,65 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import Logic from './logic'
-export default function App({Reward_vs_player}) {
+import Logic from "./logic";
+export default function App() {
+  // const [A, setA] = useState(0)
 
+  const [B, setB] = useState(0);
+  // const [A, setA] = useState(0)
+  console.log("B =", B);
 
+  //   let ScoreMinus = 100;
+  //   let ScorePlus = B;
 
+  const count = useMotionValue(0);
+  let C = 10;
+  const rounded = useTransform(count, Math.round);
 
-    // const [A, setA] = useState(0)
+  const count1 = useMotionValue(0);
+  const rounded1 = useTransform(count1, Math.round);
 
-    const [B, setB] = useState()
-    // const [A, setA] = useState(0)
-    console.log("B =", B)
+  useEffect(() => {
+    let A = B + C;
+    setB(A);
+    console.log("B useEffect =", B);
+    const animation = animate(count, 100, { duration: 3, delay: 0 });
 
+    const animation1 = animate(count1, A, { duration: 3, delay: 0 });
 
-    useEffect(() => {
+    return () => {
+      animation1.stop;
+      animation.stop;
+    };
+  }, []);
 
+  //   console.log("ScoreMinus = ", ScoreMinus);
+  //   console.log("ScorePlus =", ScorePlus);
 
-        setB(B + 10);
+  // useEffect(() => {
 
+  // }, []);
 
-    }, []);
-    
+  // useEffect(() => {
 
+  // }, []);
 
-    let ScoreMinus = 100
-    let ScorePlus = B
-
-
-    console.log("ScoreMinus = ", ScoreMinus)
-    console.log("ScorePlus =", ScorePlus)
-
-
-    const count = useMotionValue(0);
-    const rounded = useTransform(count, Math.round)
-
-    useEffect(() => {
-        const animation = animate(count, ScoreMinus, { duration: 3, delay: 0 });
-        return animation.stop;
-    }, []);
-
-    const count1 = useMotionValue(0);
-    const rounded1 = useTransform(count1, Math.round);
-
-    useEffect(() => {
-        const animation1 = animate(count1, ScorePlus, { duration: 3, delay: 0 });
-        return animation1.stop;
-    }, []);
-
-
-
-
-    return (
-        <div>
-            <motion.p>{B == 0 ? "" :rounded1}</motion.p>
-            <motion.p>{rounded}</motion.p>
-            
-        </div>
-    );
+  return (
+    <div>
+      <motion.p>{rounded1}</motion.p>
+      <motion.p>{B}</motion.p>
+      <motion.p>{rounded}</motion.p>
+    </div>
+  );
 }
 
 // const [Result_of_vs, setResult] = useState(1) // have 4 state 0 = lose, 1 = win  ,2 = calculate ATK complete,3 = calculate def complete
 
-
-
 //     const [Item_attack, setItem_attack] = useState(1)//have 4 item [1,2,3,4]
 //     const [Item_def, setItem_def] = useState(4) //have 4 item [1,2,3,4]
-
 
 //     const [Reward_vs_player, setsReward_vs_player] = useState(0) // coin player have
 //     const [Deward_vs_enemy, setsDeward_vs_enemy] = useState(0) // coin enemy have
 //     const [Coin, setCoin] = useState(50)// variable have value random coin
-
 
 //     let winner = 1;
 //     let loser = -1;

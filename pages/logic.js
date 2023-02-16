@@ -40,14 +40,14 @@ const logic = () => {
     const index = abc.length
     const lengthE = Math.floor(Math.random() * index);
     const lengthP = Math.floor(Math.random() * index);
-    const enemy = abc[lengthE]
+    const enemy = abc[0]
     console.log("enemy = ",enemy)
 
     const [player, setplayer] = useState("")
     
     useEffect(() => {
         
-        setplayer( player + abc[lengthP] );
+        setplayer( player + abc[0] );
         
       }, []);
     
@@ -62,7 +62,7 @@ const logic = () => {
         console.log("Draw")
         setA("ค้อน")
         setB("ค้อน")
-        setplayer('')
+        
         setstate('Draw')  
         setResult('5')
     } else if (player == "A" && enemy == "B"){
