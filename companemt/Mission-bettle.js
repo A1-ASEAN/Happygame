@@ -46,7 +46,6 @@ const Top = ({secpage}) => {
             <Stack alignItems="center" justifyContent="center">
                 <Box sx={{
                     height: '100%', width: "100vw",
-
                     zIndex: 'tooltip',pt:1.2
                 }}>
                     <Stack direction="row"
@@ -55,7 +54,7 @@ const Top = ({secpage}) => {
 
                         <Box onClick={() => toggle(1)}>
 
-                            <Typography onClick={() => secpage("Daily")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>DAILY</Typography>
+                            <Typography onClick={() => secpage("Daily")} className={myFont.className} variant='h4' sx={{ pl: 1 ,cursor:'pointer'}} color={"primary"}>DAILY</Typography>
                             {tab == 1 ?
                                 <Box sx={{
                                     position: 'absolute',
@@ -72,7 +71,7 @@ const Top = ({secpage}) => {
                         </Box>
                         <Box onClick={() => toggle(2)}>
 
-                            <Typography onClick={() => secpage("WEEKLY")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>WEEKLY</Typography>
+                            <Typography onClick={() => secpage("WEEKLY")} className={myFont.className} variant='h4' sx={{ pl: 1,cursor:'pointer' }} color={"primary"}>WEEKLY</Typography>
                             {tab == 2 ?
                                 <Box sx={{
                                     position: 'absolute',
@@ -88,7 +87,7 @@ const Top = ({secpage}) => {
                         </Box>
                         <Box onClick={() => toggle(3)}>
 
-                            <Typography onClick={() => secpage("SPECIAL")} className={myFont.className} variant='h4' sx={{ pl: 1 }} color={"primary"}>SPECIAL</Typography>
+                            <Typography onClick={() => secpage("SPECIAL")} className={myFont.className} variant='h4' sx={{ pl: 1,cursor:'pointer' }} color={"primary"}>SPECIAL</Typography>
                             {tab == 3 ?
                                 <Box sx={{
                                     position: 'absolute',

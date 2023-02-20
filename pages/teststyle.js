@@ -1,18 +1,33 @@
-import React, { useEffect } from 'react'
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import * as React from 'react';
+import Winlose from "./winlose"
+import  { useRouter } from 'next/router';
 
 
-function teststyle() {
-    const count = useMotionValue(0);
-    const rounded = useTransform(count, Math.round);
 
-    useEffect(() => {
-        const animation = animate(count, 50, { duration: 2 });
-        return animation.stop;
-    }, []);
+const App = () => {
+
+    const router = useRouter()
+
+    const {
+        query: {
+            number
+        }
+    } = router
+
+    const props = {
+        number
+    }
+
+    console.log(props.number)
     return (
-        <motion.p>{rounded}</motion.p>
-    )
-}
+        <div>
 
-export default teststyle
+            {props.number}
+
+        </div>
+    );
+};
+
+
+
+export default App;

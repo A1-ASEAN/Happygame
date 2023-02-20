@@ -11,12 +11,7 @@ import { createTheme } from '@mui/material/styles';
 import LukyIcon from '../companemt/luky-icon'
 import Footernavbar from '../companemt/profil-foternavbar'
 
-
-
-
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
-
-
 
 const theme = createTheme({
     palette: {
@@ -47,7 +42,7 @@ export default function Home() {
 
                     <Main />
                     <Butoom />
-                   
+
                 </Box>
 
                 <Box >
@@ -55,7 +50,6 @@ export default function Home() {
                     <Footernavbar />
 
                 </Box>
-
 
             </Box>
 
@@ -70,7 +64,6 @@ export default function Home() {
     //             <Box maxWidth="390px" component="div" sx={{ bgcolor: "white", height: '342px', overflow: 'hidden' }}>
                    
     //                 <Top />
-                    
 
     //             </Box>
     //             <Main />

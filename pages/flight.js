@@ -11,9 +11,6 @@ import Link from 'next/link';
 const flight = () => {
     
   const [countInTimeout, setCountInTimeout] = useState("");
-
-  
-
     
     return <div>
         <Box height={"100vh"} overflow={'hidden'} bgcolor={'#fff'}>
@@ -28,7 +25,7 @@ const flight = () => {
                 <Box flex={1} overflow={"hidden"} sx={{ overflowY: "auto" }}>
 
                     <Main />
-                    <App/>
+                    
                    
                 </Box>
 

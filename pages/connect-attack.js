@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import App from "./Recover";
+import WinLose from "./Recover";
+import Boom from './Attack'
 
-import Flight from './flight'
 
-const TimeoutExample = () => {
+const TimeoutExample = ({rounded}) => {
   
-  const [countInTimeout, setCountInTimeout] = useState(<Flight/>);
 
+  
+  const [countInTimeout, setCountInTimeout] = useState(<Boom/>);
+  console.log(rounded)
   useEffect(() => {
     setTimeout(() => {
-      setCountInTimeout(<App/>); // count is 0 here
-    }, 5500);
+  
+      setCountInTimeout(<WinLose rounded={rounded}/>); // count is 0 here
+    },10000);
   }, []);
 
   return (
     <div>
-      {countInTimeout}
+    {countInTimeout}
     </div>
   );
 };

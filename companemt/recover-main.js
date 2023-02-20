@@ -3,15 +3,11 @@ import { Box, height, Stack } from '@mui/system'
 import React from 'react'
 import localFont from '@next/font/local'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-import { purple, red } from '@mui/material/colors';
+import Boom from '../companemt/boom'
 import Link from 'next/link';
 
 
 const myFont = localFont({ src: '../gamer_2/Gamer.ttf' })
-
-
-
 
 const theme = createTheme({
     palette: {
@@ -27,27 +23,35 @@ const theme = createTheme({
     },
 });
 
+function infectmain({rounded}) {
 
-
-function infectmain() {
     return (
-        <Box width={"100%"} sx={{ pt: "40px" }}>
+        <Box width={"100%"} sx={{ pt: "0" }}>
             <Stack alignItems={"center"}>
                 <Box height={10}>
-                    <img src='/image/recover/win.svg' />
+                    <Stack justifyContent={'center'} alignItems={"center"} height={150}>
+                        <Typography className={myFont.className}
+                            sx={{ fontSize: '7.5rem', height: "75px", color: '#FFE000', textShadow: '0px 3px #E28413' }}>
+                            YOUR
+                        </Typography>
+                        <Typography className={myFont.className}
+                            sx={{ fontSize: '7.5rem', color: '#FFE000', textShadow: '0px 3px #E28413' }}>
+                            WIN
+                        </Typography>
+                    </Stack>
                 </Box>
                 <Box width={"420px"}>
                     <Stack direction="row"
                         justifyContent="flex-end"
                         alignItems="flex-start">
-                        <Box position={"relative"} sx={{ height: 120, pl: 30 }} zIndex={'tooltip'} >
+                        <Box position={"relative"} sx={{ height: 120, pl: 30, pt: "30px" }} zIndex={'tooltip'} >
                             <img src='/image/recover/clounds-1.svg' />
                         </Box>
                     </Stack>
                 </Box>
                 <ThemeProvider theme={theme}>
-                    <Typography position={'relative'} className={myFont.className} sx={{ pt: 0, fontSize: "40px", height: "60px" }} color={'primary'}>
-                        +10 POINTS
+                    <Typography position={'relative'} className={myFont.className} sx={{ pt: 3, fontSize: "40px", height: "60px" }} color={'primary'}>
+                    {rounded}POINTS
                     </Typography>
                 </ThemeProvider>
                 <Box width={"650px"}>
@@ -92,13 +96,8 @@ function infectmain() {
                         </Typography>
                     </Button>
                 </Link>
-
-
             </Stack>
-
-
-        </Box>
-
+        </Box> 
     )
 }
 

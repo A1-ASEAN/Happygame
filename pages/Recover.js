@@ -3,11 +3,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Header from '../companemt/recover-header'
 import Mian from '../companemt/recover-main'
-import { Main } from 'next/document';
 
 function infect() {
-  return (
-
+return (
+                                    
     <Box height={"100vh"} overflow={'hidden'} bgcolor={'#fff'}>
             <Box height={"100%"} display={"flex"} flexDirection={"column"}>
 
@@ -28,12 +27,8 @@ function infect() {
                     <Footernavbar />
 
                 </Box>
-
-
             </Box>
-
         </Box>
   )
 }
-
 export default infect 
